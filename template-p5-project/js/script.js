@@ -12,7 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
- createCanvas(windowWidth, windowHeight); 
+ createCanvas(640, 640); 
 }
 
 
@@ -20,10 +20,34 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-       background('#397367');
+    background('#397367');
+
+    //Drawing the moon 
+    push();
+    fill('#FFF3D1');
+    ellipse(320,280,150);
+    pop();
+
+    //Drawing the mountains
+    //Reminders that will be useful:
+    //X-axis: 
+            // 1.Increasing x moves the point to the right.
+            //2.Decreasing x moves it to the left.
+    //Y-axis:
+        //1. Increasing y moves the point down.
+        //2. Decreasing y moves it up.
+
+    fill('#000000');
+    triangle(80, 400, 400, 400, 250, 300);
+    triangle(200, 400, 600, 400, 400, 270);
+    triangle(50, 400, 300, 400, 200, 290);
+    triangle(0, 400, 150, 400, 100, 240);
+    triangle(400, 400, 640, 400, 640, 240);
+    
+
+    //Draw land
+    fill('#020122');
+    rect(0,500,800,200)
 }
 
-function drawMountains() {
-    triangle(30, 75, 58, 20, 86, 75);
 
-}
