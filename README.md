@@ -1,4 +1,4 @@
-# Erica Galvez's CART 253 Website
+# Erica Galvez's Website
 
 ![CART 253 Banner](2a473662d05c72b07cae8ac6890ea399.jpg)
 
