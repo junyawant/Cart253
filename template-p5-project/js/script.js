@@ -20,5 +20,10 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-       background('#CF2913');
+       background('#397367');
+}
+
+function drawMountains() {
+    triangle(30, 75, 58, 20, 86, 75);
+
 }
