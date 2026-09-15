@@ -4,7 +4,7 @@ Erica Galvez & Sabrina Rath
 
 [View this project online](http://127.0.0.1:5500/template-p5-project/)
 
-
+![CART 253 Banner](p5instructionschallenge.png)
 
 ## Description
 
