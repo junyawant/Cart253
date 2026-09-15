@@ -12,7 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-
+ createCanvas(windowWidth, windowHeight); 
 }
 
 
