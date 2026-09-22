@@ -1,6 +1,6 @@
 # Domo Monster
 
-Erica Galvez
+## Erica Galvez
 
 [View this project online]([https://editor.p5js.org/jomarkson01/sketches/_2Dz7PJK2])
 
