@@ -12,5 +12,10 @@ Welcome to my CART 253 website. This is Erica Galvez's coursework space for the 
 ## Prototypes
 
 This section is dedicated to my prototypes and projects for CART 253 that will be added here throughout the semester.
-- [Instructions Challenge](instructionschallenge.md)
+
+### Prototypes
 - [Prototype Instructions](prototypeinstructions.md)
+
+### Challenges
+- [Instructions Challenge](instructionschallenge.md)
+
