@@ -34,6 +34,11 @@ function draw() {
     triangle (-1, 370, 1, 400, 530, 340);
     fill('#11469b');
     triangle (100, 1, 200, 1, 530, 400);
+    fill('#3e629b');
+    triangle (500, 1, 400, 1, 500, 355);
+    fill('#5287dd');
+    triangle (500, 340, -200, 500, -200, 600);
+
     
 
     //Main Character
