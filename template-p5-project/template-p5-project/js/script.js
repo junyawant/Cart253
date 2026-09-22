@@ -10,7 +10,7 @@
 "use strict";
 
 function setup() {
-    describe("This is a recreation of the charater Domo. He is a brown monster often drawn with a large, open mouth and sharp teeth. He has two fully filled black eyes. There is another variation of his character that can sometimes be pink!")
+    describe("This is a recreation of the character Domo. He is a brown monster often drawn with a large, open mouth and sharp teeth. He has two fully filled black eyes. There is another variation of his character that can sometimes be pink!")
     createCanvas(640, 640);
 }
 
