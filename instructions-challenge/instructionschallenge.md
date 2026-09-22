@@ -2,7 +2,7 @@
 
 Erica Galvez & Sabrina Rath
 
-[View this project online](http://127.0.0.1:5500/template-p5-project/)
+[View this project online](https://sabiewasabi.github.io/CART253/topics/landscape-challenge/)
 
 ![p5](p5instructionschallenge.png)
 
