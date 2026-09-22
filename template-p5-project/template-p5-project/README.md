@@ -4,6 +4,8 @@ Erica Galvez
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
+![p5](Domo.jng)
+
 ## Description
 
 This is a recreation of the character Domo. 
