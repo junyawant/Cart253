@@ -1,15 +1,15 @@
 /**
- * Title of Project
- * Author Name
+ * Exploded Thoughts
+ * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This is my second prototype for the assignment: prototype: instructions.
+ * It is an abstract piece with a black background and a blue figure standing on the right side of the canvas. 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+
 */
 function setup() {
     createCanvas(640,640);
@@ -38,6 +38,15 @@ function draw() {
     triangle (500, 1, 400, 1, 500, 355);
     fill('#5287dd');
     triangle (500, 340, -200, 500, -200, 600);
+    fill('#021129');
+    triangle (480, 350, 200, 130, -300, -140);
+    fill('#0a306d');
+    triangle (-9000, 1, -1000, 100, 500, 350);
+    fill('#5982c5');
+    triangle (270, -58, 360, 1, 530, 425);
+    fill('#63799b');
+    triangle (630, 1, 560, 1, 500, 350);
+
 
     
 
