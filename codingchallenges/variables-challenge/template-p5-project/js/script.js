@@ -86,7 +86,7 @@ sky.fill -1,-1,-1;
   if (bird.x ===0){
     bird.x = bird.x = +1
   } else if (bird.x === 400){
-bird.x = bird.x -1
+bird.x = bird.x +1
   
 
 }
