@@ -9,24 +9,10 @@
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 function setup() {
+    describe("This is a recreation of the charater Domo. He is a brown monster often drawn with a large, open mouth and sharp teeth. He has two fully filled black eyes. There is another variation of his character that can sometimes be pink!")
     createCanvas(640, 640);
 }
-
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-//Reminders that will be useful:
-    //X-axis: 
-    // 1.Increasing x moves the point to the right.
-    //2.Decreasing x moves it to the left.
-    //Y-axis:
-    //1. Increasing y moves the point down.
-    //2. Decreasing y moves it up.
 
 function draw() {
     background('#654236');
@@ -79,7 +65,5 @@ function draw() {
     triangle (320, 580, 360, 580, 340, 540); //Fourth Tooth (Middle Right)
     triangle (370, 580, 410, 580, 390, 540); //Fifth Tooth (Far Right)
     triangle (420, 580, 460, 580, 440, 540); //Sixth Tooth (Far Right)
-
-    
 
 }
