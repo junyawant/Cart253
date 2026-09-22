@@ -4,7 +4,7 @@ Erica Galvez
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
-![DomoPhoto](DomoMonster.jpg)
+![DomoPhoto](Domo.jpg)
 
 ## Description
 
