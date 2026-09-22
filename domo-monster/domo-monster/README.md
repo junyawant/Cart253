@@ -2,7 +2,7 @@
 
 # Erica Galvez
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https;junyawant.github.io/Cart253/domo-monster/domo-monster/)
 
 ![domo-image](./assets/images/domo-image.jpg)
 
