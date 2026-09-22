@@ -12,6 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(640,640);
 
 }
 
@@ -20,6 +21,18 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(640,640);
+    background('#000000');
+
+    //Main Character
+
+    //Head
+    fill('#011638');
+    ellipse(500, 350, 50, 50);
+
+    //Torose
+    fill('#011638');
+    rect (465, 375, 70, 100, 30);
+
+    
 
 }
