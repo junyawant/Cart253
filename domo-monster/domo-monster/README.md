@@ -1,10 +1,10 @@
-# TITLE OF PROJECT
+# domo-monster
 
-AUTHOR NAME
+# Erica Galvez
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
-![domo-image](domo-image.jpg)
+![domo-image](./Assets/domo-image.jpg)
 
 ## Description
 
