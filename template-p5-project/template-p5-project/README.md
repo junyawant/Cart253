@@ -4,7 +4,7 @@ Erica Galvez
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
-![p5](Domo.jpg)
+![PrototypeInstructions](Domo.jpg)
 
 ## Description
 
