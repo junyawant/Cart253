@@ -2,8 +2,7 @@
  * Flowers Plus
  * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This project is meant to be weird, yet representative. While it can definitely seem creative, having flowers represented in this way can look odd. 
  */
 
 "use strict";
@@ -17,32 +16,67 @@ function setup() {
 }
 
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 function draw() {
     background('#dfe2b2');
 
 //Lines that serves as "Branches"
     //Main Branch 
     push()
-    strokeWeight(7);
+    strokeWeight(8);
     line (640, 0, 480, 100);
     line (480, 100, 320, 260);
     pop()
 
     push()
-    strokeWeight(5);
+    strokeWeight(7);
     line (320, 260, 180, 360);
     pop()
 
-    strokeWeight(3);
+    strokeWeight(5);
     line (180, 360, 40, 420);
 
-    strokeWeight(1.5);
-    line (40, 420, 0, 450); //Thin branch that extends off the canvas
-    
+    strokeWeight(3);
+    line (90, 400, 60, 440);
 
+    strokeWeight(5);
+    line (140, 330, 250, 310);
+
+    strokeWeight(4.5);
+    line (40, 420, 0, 450); //Thin branch that extends off the canvas
+
+    //Upper Branch
+    strokeWeight(6);
+    line (320, 260, 220, 180);
+
+    strokeWeight(4);
+    line (220, 180, 100, 140);
+
+    //Lower Branch
+    strokeWeight(7);
+    line (480, 100, 460, 250);
+
+    strokeWeight(6);
+    line (460, 250, 440, 400);
+    
+    strokeWeight(5);
+    line (440, 400, 380, 520);
+
+    strokeWeight(4);
+    line (440, 400, 350, 450);
+
+    //Small Twigs/Thorns
+    strokeWeight(1.5);
+    line(220, 180, 150, 110);
+    line(180, 360, 120, 320);
+
+    //Twigs Near Right Side
+    line(460, 250, 520, 280);
+    line(440, 400, 500, 450);
+
+    //Other Thorns
+    line(350, 320, 360, 210);
+    line(250, 310, 260, 290);
+    line (470, 180, 490, 170);
 
     //Random Plus Signs 
     //PS = Plus Sign
@@ -84,7 +118,6 @@ function draw() {
     //Left Square
     rect (90, 330, 30, 30);
     
-
     //PS Top Far Right Next to Big PS
     //Top Square
     rect (495, 10, 25, 25,);
@@ -96,7 +129,6 @@ function draw() {
     rect (520, 35, 25, 25);
     //Left Square 
     rect (470, 35, 25, 25);
-
 
     //Big PS Top Far Right
     //Right Square
@@ -167,16 +199,4 @@ function draw() {
     rect (525, 435, 45, 45);
     //Left Square
     rect (435, 435, 45, 45);
-
-
-
-
-
-
-
-    
-
-
-
-
 }
