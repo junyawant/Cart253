@@ -1,12 +1,12 @@
 # TITLE OF PROJECT
 
-AUTHOR NAME
+A project by Erica Galvez, Sabrina Rath and Konstantinos Christodoulakis
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This project is essentially a guy who becomes visibly furious because of a bird. Mr Furious HATES birds. He becomes more red with anger as the bird continutes to fly back and forth above his head.
 
 ## Attribution
 
