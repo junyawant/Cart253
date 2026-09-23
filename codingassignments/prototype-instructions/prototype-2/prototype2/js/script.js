@@ -4,26 +4,25 @@
  * 
  * This is my second prototype for the assignment: prototype: instructions.
  * It is an abstract piece with a black background and a blue figure standing on the right side of the canvas. 
+ * This piece is up for interpretation and can be taken in many different ways. 
  */
 
 "use strict";
 
-/**
-
-*/
 function setup() {
     createCanvas(640,640);
 
 }
 
+describe ("This piece is an abstract piece with a black background and a blue figure, resembling an unknown person, meaning it could represent anyone, with an abundance of blue colored lines of different shades coming from the figures head.")
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 function draw() {
     background('#000000');
 
-    //Abstract Background
+    //Abstract Background (Triangles)
+    push();
+    stroke('#6976ec');
+    strokeWeight(1);
     fill('#07214b');
     triangle (500, 350,10, 200, 1, 100);
     fill('#234883');
@@ -47,12 +46,15 @@ function draw() {
     fill('#63799b');
     triangle (630, 1, 560, 1, 500, 350);
 
-
-    
+    pop();
 
     //Main Character
 
     //Head
+
+    push();
+    stroke('#3668c7');
+    strokeWeight(1);
     fill('#011638');
     ellipse(500, 350, 50, 50);
 
@@ -69,9 +71,6 @@ function draw() {
     fill('#011638');
     rect (465, 475, 35, 100, 10);
     rect (505, 475, 35, 100, 10);
-
-
-
-    
+    pop();
 
 }
