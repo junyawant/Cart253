@@ -16,7 +16,7 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 ### Prototypes
 
 #### Prototype Instructions
-- [Prototype 1](codingassignments/prototype-instructions/prototype-1/domo-monster/)
+- [Prototype 1]((https://github.com/junyawant/Cart253/tree/main/codingassignments/prototype-instructions/prototype-1/domo-monster/))
 - [Prototype 2](codingassignments/prototype-instructions/prototype-2/prototype2/)
 - [Prototype 3](codingassignments/prototype-instructions/prototype-3/abstract-art/) 
 
