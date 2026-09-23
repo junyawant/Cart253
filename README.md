@@ -9,12 +9,15 @@ Welcome to my CART 253 website. This is Erica Galvez's coursework space for the 
 - [Reflective Journal](journal.md)
 - [My Github](https://github.com/junyawant)
 
-## Prototypes
+## Projects
 
 This section is dedicated to my prototypes and projects for CART 253 that will be added here throughout the semester.
 
 ### Prototypes
-- [Prototype Instructions](prototypeinstructions.md)
+
+#### Prototype Instructions
+- [Prototype 1](domomonster.md)
+- [Prototype 2](expandedthoughts.md)
 
 ### Challenges
 - [Instructions Challenge](instructionschallenge.md)
