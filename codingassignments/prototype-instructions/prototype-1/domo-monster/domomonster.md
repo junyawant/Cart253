@@ -4,6 +4,8 @@
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
+![DomoImage](../domo-monster/assets/images/domo-image.jpg)
+
 ## Description
 
 This is my first prototype for this assignment. 

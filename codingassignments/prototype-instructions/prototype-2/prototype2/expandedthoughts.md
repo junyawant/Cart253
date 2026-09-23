@@ -4,7 +4,7 @@
 
 [View this project online](../prototype2/js/script.js)
 
-![expandedthoughts](expandedthoughts.png)
+![expandedthoughts](../prototype2/assets/images/expandedthoughts.png)
 
 ## Description
 
