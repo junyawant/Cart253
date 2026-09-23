@@ -16,9 +16,9 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 ### Prototypes
 
 #### Prototype Instructions
-- [Prototype 1](../Cart253/codingassignments/prototype-instructions/prototype-1/domo-monster/README.md)
-- [Prototype 2](../Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/README.md)
+- [Prototype 1](./codingassignments//prototype-1/domo-monster/)
+- [Prototype 2](./codingassignments/s/prototype-2/prototype2/)
 
 ### Challenges
-- [Instructions Challenge](../Cart253/codingchallenges/instructions-challenge/README.md)
+- [Instructions Challenge](./codingchallenges/instructions-challenge/)
 
