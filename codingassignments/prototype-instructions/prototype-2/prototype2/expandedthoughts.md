@@ -2,7 +2,9 @@
 
 ## Erica Galvez
 
-[View this project online](https;junyawant.github.io/Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/)
+[View this project online](../prototype2/js/script.js)
+
+![expandedthoughts](expandedthoughts.png)
 
 ## Description
 
