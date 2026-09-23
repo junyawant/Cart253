@@ -1,3 +1,6 @@
+---
+---
+
 # Expanded Thoughts
 
 ## Erica Galvez
