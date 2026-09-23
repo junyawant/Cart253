@@ -2,7 +2,7 @@
 
 Erica Galvez
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-instructions/prototype-3/abstract-art/)
 
 ![plus-flowers-image](../abstract-art/assets/images/plusflowers.png)
 
