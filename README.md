@@ -20,5 +20,5 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 - [Prototype 2](../Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/expandedthoughts.md)
 
 ### Challenges
-- [Instructions Challenge](instructionschallenge.md)
+- [Instructions Challenge](../Cart253/codingchallenges/instructions-challenge/instructionschallenge.md)
 
