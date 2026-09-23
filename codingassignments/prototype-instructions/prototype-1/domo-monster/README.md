@@ -2,7 +2,7 @@
 
 ## Erica Galvez
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https;//junyawant/Cart253/codingassignments/prototype-1)
 
 ![DomoImage](../domo-monster/assets/images/domo-image.jpg)
 
