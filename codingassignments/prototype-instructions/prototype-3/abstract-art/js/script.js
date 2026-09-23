@@ -24,15 +24,26 @@ function draw() {
     background('#CACF85');
 
     //Random Plus Signs 
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
-    rect (random(0,640), random(0,640), 10, 10);
+
+    //Plus Sign Far Left
+    //Middle Square
+    fill('#EF6F6C');
+    rect (70, 120, 30, 30);
+    //Left Square
+    rect (40, 120, 30, 30);
+    //Right Square
+    rect (100, 120, 30, 30);
+    //Lower Square
+    rect (70, 150, 30, 30);
+    //Top Square
+    rect (70, 90, 30, 30);
+
+
+
+    rect (200, 200, 50, 50);
+    rect (300, 300, 50, 50);
+    rect (400, 400, 50, 50);
+    rect (500, 500, 50, 50);
+    rect (600, 600, 50, 50);
 
 }
