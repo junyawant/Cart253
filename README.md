@@ -16,9 +16,9 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 ### Prototypes
 
 #### Prototype Instructions
-- [Prototype 1](https;//junyawant.github.io/Cart253/prototypes/prototype1.html)
-- [Prototype 2](../Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/expandedthoughts.md)
+- [Prototype 1](../Cart253/codingassignments/prototype-instructions/prototype-1/domo-monster/README.md)
+- [Prototype 2](../Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/README.md)
 
 ### Challenges
-- [Instructions Challenge](../Cart253/codingchallenges/instructions-challenge/instructionschallenge.md)
+- [Instructions Challenge](../Cart253/codingchallenges/instructions-challenge/README.md)
 
