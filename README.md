@@ -16,11 +16,11 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 ### Prototypes
 
 #### Prototype Instructions
-- [Prototype 1](codingassignments/prototype-instructions/prototype-1/domo-monster/README.md)
-- [Prototype 2](codingassignments/prototype-instructions/prototype-2/prototype2/README.md)
-- [Prototype 3](codingassignments/prototype-instructions/prototype-3/abstract-art/README.md) 
+- [Prototype 1](codingassignments/prototype-instructions/prototype-1/domo-monster/)
+- [Prototype 2](codingassignments/prototype-instructions/prototype-2/prototype2/)
+- [Prototype 3](codingassignments/prototype-instructions/prototype-3/abstract-art/) 
 
 ### Challenges
-- [Instructions Challenge](codingchallenges/instructions-challenge/README.md)
-- [Variables Challenge](codingchallenges/variables-challenge/mr-furious/README.md)
+- [Instructions Challenge](codingchallenges/instructions-challenge/)
+- [Variables Challenge](codingchallenges/variables-challenge/mr-furious/)
 
