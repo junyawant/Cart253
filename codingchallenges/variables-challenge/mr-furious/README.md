@@ -1,4 +1,4 @@
-# TITLE OF PROJECT
+# Mr Furious
 
 A project by Erica Galvez, Sabrina Rath and Konstantinos Christodoulakis
 
