@@ -15,6 +15,7 @@ function setup() {
 
 }
 
+describe ("A beige background with branches that connect to plus sign that are meant to portray flowers");
 
 function draw() {
     background('#dfe2b2');
