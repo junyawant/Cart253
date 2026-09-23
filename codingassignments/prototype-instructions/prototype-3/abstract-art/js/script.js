@@ -23,8 +23,28 @@ function setup() {
 function draw() {
     background('#dfe2b2');
 
-    //Random Plus Signs 
+//Lines that serves as "Branches"
+    //Main Branch 
+    push()
+    strokeWeight(7);
+    line (640, 0, 480, 100);
+    line (480, 100, 320, 260);
+    pop()
 
+    push()
+    strokeWeight(5);
+    line (320, 260, 180, 360);
+    pop()
+
+    strokeWeight(3);
+    line (180, 360, 40, 420);
+
+    strokeWeight(1.5);
+    line (40, 420, 0, 450); //Thin branch that extends off the canvas
+    
+
+
+    //Random Plus Signs 
     //PS = Plus Sign
 
     //PS Far Left
@@ -147,13 +167,6 @@ function draw() {
     rect (525, 435, 45, 45);
     //Left Square
     rect (435, 435, 45, 45);
-
-    //Lines that serves as "Branches"
-    line (70, 150, 120, 300);
-
-    line (495, 60, 425, 225);
-
-    line (425, 250, 400, 390);
 
 
 
