@@ -149,7 +149,11 @@ function draw() {
     rect (435, 435, 45, 45);
 
     //Lines that serves as "Branches"
-    line (100, 10, 10, 10)
+    line (70, 150, 120, 300);
+
+    line (495, 60, 425, 225);
+
+    line (425, 250, 400, 390);
 
 
 
