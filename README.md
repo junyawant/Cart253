@@ -16,8 +16,8 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 ### Prototypes
 
 #### Prototype Instructions
-- [Prototype 1](domomonster.md)
-- [Prototype 2](expandedthoughts.md)
+- [Prototype 1](../Cart253/codingassignments/prototype-instructions/prototype-1/domo-monster/domomonster.md)
+- [Prototype 2](../Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/expandedthoughts.md)
 
 ### Challenges
 - [Instructions Challenge](instructionschallenge.md)
