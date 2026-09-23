@@ -2,7 +2,7 @@
 
 ## Erica Galvez
 
-[View this project online](../prototype2/js/script.js)
+[View this project online]
 
 ![expandedthoughts](../prototype2/assets/images/expandedthoughts.png)
 
