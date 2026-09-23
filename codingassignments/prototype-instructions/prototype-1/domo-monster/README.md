@@ -1,3 +1,7 @@
+---
+layout: default
+title: Domo Monster
+
 # domo-monster
 
 ## Erica Galvez
