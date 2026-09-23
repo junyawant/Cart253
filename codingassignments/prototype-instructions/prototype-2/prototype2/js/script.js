@@ -1,5 +1,5 @@
 /**
- * Exploded Thoughts
+ * Expanded Thoughts
  * Erica Galvez
  * 
  * This is my second prototype for the assignment: prototype: instructions.
