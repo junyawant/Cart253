@@ -2,8 +2,7 @@
  * Crimson Sunset
  * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This project is my first trying at implementing variables to my code! It is meant to mimic that of a Polaroid picture capturing a crimson view/horizon.
  */
 
 "use strict";
@@ -32,7 +31,6 @@ function draw() {
     }
 
     backgroundVal = constrain(backgroundVal, 0, 255);
-    
     
     let currentbackground = lerpColor(color1, color2, backgroundVal / 255);
     
@@ -64,11 +62,5 @@ function draw() {
     //Drawing the Sun
     fill("#635840");
     ellipse(80, 140, 60, 60);
-    
-
-
-    
- 
-
     
 }
