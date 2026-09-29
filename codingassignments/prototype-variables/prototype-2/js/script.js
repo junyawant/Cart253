@@ -44,6 +44,12 @@ function draw() {
     line(0, 550, 600, 550);
     line(0, 580, 600, 580);
     //Vertical Lines (For Frame)
+    //Top Half
+    line(15, 250, 15, 100);
+    line(585, 100, 585, 250);
+    //Bottom Half
+    line (15, 580, 15, 430);
+    line(585, 430, 585, 580);
 
 
     pop();
