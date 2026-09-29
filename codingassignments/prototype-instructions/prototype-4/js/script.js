@@ -24,10 +24,14 @@ function setup() {
 }
 
 function draw() {
-    if (mousePressed){
+    if (mouseIsPressed){
         backgroundVal += 5; 
     } else {
         backgroundVal -= 5; 
     }
 
+    backgroundVal = constrain(backgroundVal, 0, 255);
+    let currentbackground = lerpColor(color1, color2, backgroundVal / 255);
+
+    background(currentbackground);
 }
