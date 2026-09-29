@@ -1,5 +1,5 @@
 /**
- * Hotel California
+ * Sweet Child O' Mine
  * Erica Galvez
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
@@ -45,7 +45,7 @@ function draw() {
     line(0, 580, 600, 580);
     //Vertical Lines (For Frame)
 
-    
+
     pop();
 
     //Adding Text (Decoration)
@@ -64,12 +64,6 @@ function draw() {
     textStyle('BOLD');
     textSize(30);
     textAlign(CENTER, CENTER); 
-    //Initial Chord
-    text("0", 130, 130);
-    text("0", 130, 160);
-    text("2", 130, 190);
-    text("2", 130, 220);
-    text("0", 130, 250);
 
     //Singular Notes/Tabs
     text("2", 200, 220);
