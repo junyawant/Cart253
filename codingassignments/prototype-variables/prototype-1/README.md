@@ -1,3 +1,6 @@
+---
+---
+
 # Crimson View
 
 ## Erica Galvez
