@@ -24,5 +24,10 @@ function setup() {
 }
 
 function draw() {
+    if (mousePressed){
+        backgroundVal += 5; 
+    } else {
+        backgroundVal -= 5; 
+    }
 
 }
