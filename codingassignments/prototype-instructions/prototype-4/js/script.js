@@ -24,6 +24,7 @@ function setup() {
 }
 
 function draw() {
+    //This allows for my background to appear as a fade/gradient using mouse pressed!
     if (mouseIsPressed){
         backgroundVal += 5; 
     } else {
@@ -31,7 +32,39 @@ function draw() {
     }
 
     backgroundVal = constrain(backgroundVal, 0, 255);
+    
+    
     let currentbackground = lerpColor(color1, color2, backgroundVal / 255);
-
+    
+    //Draws the sky
     background(currentbackground);
+
+    //Drawing Lower Area
+    fill("#ffffff");
+    rect(10, 10, 380, 70); //Top Frame
+    rect(10, 320, 380, 70); //Bottom Frame
+    rect(10, 10, 20, 310); //Left Side
+    rect(370, 10, 20, 310); //Right Side
+
+    //Adding text to Frame
+    fill("#000000");
+    textStyle('BOLD');
+    textSize(16);
+    textAlign(CENTER, CENTER); //Centers the text HORIZONTALLY + VERTICALLY
+    text("Polaroid Image", 200, 355);
+
+    //Creating Mountains
+    noStroke();
+    fill("#424040");
+    triangle(30, 320, 110, 180, 200, 320);
+    triangle(120, 320, 230, 150, 340, 320);
+    triangle(30, 320, 150, 170, 270, 320);
+    triangle(100, 320, 290, 200, 370, 320);
+    
+
+
+    
+ 
+
+    
 }
