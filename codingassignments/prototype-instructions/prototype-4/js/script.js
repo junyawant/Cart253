@@ -10,20 +10,19 @@
 
 //Assigning variables
 let backgroundVal = 0;
-let color1, color2; //black + red
+let color1, color2; //Black + Red
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
     createCanvas(400, 400,);
+    //Assigning colors to each variables!
+    color1 = color("#000000") //Black 
+    color2 = color("#3D0C11") //Red
 
 }
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 function draw() {
 
 }
