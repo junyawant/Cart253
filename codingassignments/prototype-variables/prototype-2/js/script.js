@@ -66,9 +66,14 @@ function draw() {
     textAlign(CENTER, CENTER); 
 
     //Singular Notes/Tabs
-    text("2", 200, 220);
-    text("0", 230, 160);
-    text("2", 270, 190);
+    text("12", 140, 190);
+    text("15", 200, 130);
+    text("14", 260, 160);
+    text("12", 320, 160);
+    text("15", 380, 100);
+    text("14", 420, 160);
+    text("14", 480, 100);
+    text("14", 540, 160);
 
 
     pop();
