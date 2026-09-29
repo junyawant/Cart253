@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Circled Sun
+ * Erica Galvez
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -12,7 +12,8 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-
+    createCanvas(400, 400);
+    angleMode(DEGREES);
 }
 
 
