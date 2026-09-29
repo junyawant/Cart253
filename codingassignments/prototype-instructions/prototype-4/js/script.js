@@ -51,15 +51,19 @@ function draw() {
     textStyle('BOLD');
     textSize(16);
     textAlign(CENTER, CENTER); //Centers the text HORIZONTALLY + VERTICALLY
-    text("Polaroid Image", 200, 355);
+    text("POLAROID IMAGE", 200, 355);
 
     //Creating Mountains
     noStroke();
-    fill("#424040");
+    fill("#161616");
     triangle(30, 320, 110, 180, 200, 320);
     triangle(120, 320, 230, 150, 340, 320);
     triangle(30, 320, 150, 170, 270, 320);
     triangle(100, 320, 290, 200, 370, 320);
+
+    //Drawing the Sun
+    fill("#635840");
+    ellipse(80, 140, 60, 60);
     
 
 
