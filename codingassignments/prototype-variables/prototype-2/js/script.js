@@ -43,14 +43,40 @@ function draw() {
     line(0, 520, 600, 520);
     line(0, 550, 600, 550);
     line(0, 580, 600, 580);
+    //Vertical Lines (For Frame)
+
+    
     pop();
 
     //Adding Text (Decoration)
-    
+    push()
+    fill("#FFFFFF");
+    textStyle(BOLD);
+    textSize(80);
+    textAlign(CENTER, CENTER);
+    text("4", 60, 210);
+    text("4", 60, 145);
+    pop();
 
-    //Testing
-    //fill("#000000");
-    //rect(100, 100, 100, 100);
+    //Lines of Tab
+    push()
+    fill("#FFFFFF");
+    textStyle('BOLD');
+    textSize(30);
+    textAlign(CENTER, CENTER); 
+    //Initial Chord
+    text("0", 130, 130);
+    text("0", 130, 160);
+    text("2", 130, 190);
+    text("2", 130, 220);
+    text("0", 130, 250);
 
+    //Singular Notes/Tabs
+    text("2", 200, 220);
+    text("0", 230, 160);
+    text("2", 270, 190);
+
+
+    pop();
 
 }
