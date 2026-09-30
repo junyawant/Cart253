@@ -11,16 +11,30 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+//An array to hold audio files
+let sounds = [];
+
+function preload() {
+sounds.push(loadSound('note1.mp3'));
+sounds.push(loadSound('note2.mp3'));
+sounds.push(loadSound('note3.mp3'));
+sounds.push(loadSound('note4.mp3'));
+sounds.push(loadSound('note5.mp3'));
+sounds.push(loadSound('note6.mp3'));
+sounds.push(loadSound('note7.mp3'));
+sounds.push(loadSound('note8.mp3'));
+}
+
 function setup() {
     createCanvas(600, 700);
 
 }
 
-
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    
     fill("#000000");
     noStroke();
     rect(0, 0, 600, 700);
@@ -91,7 +105,16 @@ function draw() {
     text("14", 460, 430);
     text("14", 500, 490);
 
-
     pop();
 
+function mousePressed() {
+    if (checkNoteClicked(140, 190)) sounds[0].play();
+    if (checkNoteClicked(190, 130)) sounds[1].play();
+    if (checkNoteClicked(250, 160)) sounds[2].play();
+    if (checkNoteClicked(320, 160)) sounds[3].play();
+    if (checkNoteClicked(370, 100)) sounds[4].play();
+    if (checkNoteClicked(430, 160)) sounds[5].play();
+    if (checkNoteClicked(490, 100)) sounds[6].play();
+    if (checkNoteClicked(540, 160)) sounds[7].play();
+}
 }
