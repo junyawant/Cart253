@@ -1,3 +1,6 @@
+---
+---
+
 # Sweet Child O' Mine Tabs
 
 ## Erica Galvez
