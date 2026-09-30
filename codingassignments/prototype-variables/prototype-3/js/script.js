@@ -27,12 +27,11 @@ function draw() {
     rotationAmount += 1;
 
     push();
-    rectMode(CENTER);
     noStroke();
-    fill("#C33C54");
+    fill("#c3aa3c");
     translate(width / 2, height / 2);
     rotate (rotationAmount);
-    rect (0, 0, 100, 75);
+    ellipse (0, 0, 100, 75);
     //same as writing
     //rotationAmount = rotationAmount + 1
     pop ();
@@ -40,7 +39,7 @@ function draw() {
     push();
     translate(width/2, height/2);
     rotate (-rotationAmount);
-    fill("#254E70");
+    fill("#2b7025");
     ellipse (100, 100, 70);
     pop ();
 }
