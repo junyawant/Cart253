@@ -34,17 +34,30 @@ const notes = [
     {x: 500, y: 490, sound: 7},
 ];
 
+const soundFiles = [
+    "assets/sounds/note1.mp3",
+    "assets/sounds/note2.mp3",
+    "assets/sounds/note3.mp3",
+    "assets/sounds/note4.mp3",
+    "assets/sounds/note5.mp3",
+    "assets/sounds/note6.mp3",
+    "assets/sounds/note7.mp3",
+    "assets/sounds/note8.mp3",
+];
+
+let currentSound = null;
+
 function setup() {
     createCanvas(600, 700);
     
-    sounds.push(new Audio("assets/sounds/note1.mp3"));
-    sounds.push(new Audio("assets/sounds/note2.mp3"));
-    sounds.push(new Audio("assets/sounds/note3.mp3"));
-    sounds.push(new Audio("assets/sounds/note4.mp3"));
-    sounds.push(new Audio("assets/sounds/note5.mp3"));
-    sounds.push(new Audio("assets/sounds/note6.mp3"));
-    sounds.push(new Audio("assets/sounds/note7.mp3"));
-    sounds.push(new Audio("assets/sounds/note8.mp3"));
+    //sounds.push(new Audio("assets/sounds/note1.mp3"));
+    //sounds.push(new Audio("assets/sounds/note2.mp3"));
+    //sounds.push(new Audio("assets/sounds/note3.mp3"));
+    //sounds.push(new Audio("assets/sounds/note4.mp3"));
+    //sounds.push(new Audio("assets/sounds/note5.mp3"));
+    //sounds.push(new Audio("assets/sounds/note6.mp3"));
+    //sounds.push(new Audio("assets/sounds/note7.mp3"));
+    //sounds.push(new Audio("assets/sounds/note8.mp3"));
 
     console.log("sounds loaded:", sounds.length); 
 }
@@ -128,14 +141,17 @@ function draw() {
 }
 
 function mousePressed() {
-
     if(!mouseButton.left) return;
 
     for (let n of notes) {
         if (checkNoteClicked(n.x, n.y)) {
-        console.log("sound index:", n.sound, "file:", sounds[n.sound].src )
-        sounds[0].currentTime = 0;
-        sounds[0].play();
+
+        if (currentSound) currentSound.pause();
+
+        currentSound = new Audio(soundFiles[n.sound]);
+        currentSound.play();
+        console.log("playing:", soundFiles[n.sound]);
+
         }
     }
     
