@@ -27,6 +27,7 @@ sounds.push(loadSound('sounds/note8.mp3'));
 
 function setup() {
     createCanvas(600, 700);
+     console.log("sounds loaded:", sounds.length);
 
 }
 
@@ -109,7 +110,11 @@ function draw() {
 }
 
 function mousePressed() {
-if(mouseButton !== LEFT) return;
+    userStartAudio();
+
+    console.log("clicked at", mouseX, mouseY);
+
+    if(mouseButton !== LEFT) return;
 
     if (checkNoteClicked(140, 190)) {
         sounds[0].play();
