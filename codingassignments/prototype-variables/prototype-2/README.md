@@ -16,3 +16,4 @@ This project is meant to be a recreation of guitar tabs, typically used when lea
 ## Attribution
 
 > - This project uses [p5.js](https://p5js.org).
+> - All soundfiles are my own. (personally edited + clipped + converted to mp3)
