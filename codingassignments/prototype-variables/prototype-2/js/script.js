@@ -1,16 +1,20 @@
 /**
- * Sweet Child O' Mine
+ * Sweet Child O' Mine Tabs
  * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This project is meant to be a recreation of guitar tabs, typically used when learning a song of your choice. I prefer using tabs when learning solos or songs that have pretty chord/note progressions. 
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * How it works:
+ * Using the LMB, click on the various differnt tab notes/numbers 
+ * When clicked, the number should be outlined and plays a specific note
+ * When played in order, the first two measures/bars of the song can be played from the song: Sweet Child O' Mine by Guns N' Roses
+ * 
 */
+
 //An array to hold audio files
 let sounds = [];
 const notes = [
