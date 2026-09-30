@@ -1,15 +1,15 @@
-# TITLE OF PROJECT
+# Sweet Child O' Mine Tabs
 
-AUTHOR NAME
+## Erica Galvez
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-2/)
+
+![tabsimage](../prototype-2/assets/images/sweetochildofmine.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This project is meant to be a recreation of guitar tabs, typically used when learning a song of your choice. I prefer using tabs when learning solos or songs that have beautiful chord/note(s) progressions. In this prototype, the song: Sweet Child O' Mine by Guns N' Roses can be heard by clicking on the tab notes in chronological order.
 
 ## Attribution
-
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
 > - This project uses [p5.js](https://p5js.org).
