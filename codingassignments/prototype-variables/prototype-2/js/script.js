@@ -165,7 +165,7 @@ function checkNoteClicked(x,y) {
 function tabText(label, x, y) {
     if(mouseIsPressed && mouseButton.left && checkNoteClicked(x, y)) {
         stroke("#791111");
-        strokeWeight(4);
+        strokeWeight(9);
     } else {
         noStroke();
     }
