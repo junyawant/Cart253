@@ -13,6 +13,26 @@
 */
 //An array to hold audio files
 let sounds = [];
+const notes = [
+    //Upper Strings
+    {x: 140, y: 190, sound: 0},
+    {x: 190, y: 130, sound: 1},
+    {x: 250, y: 160, sound: 2},
+    {x: 320, y: 160, sound: 3},
+    {x: 370, y: 100, sound: 4},
+    {x: 430, y: 160, sound: 5},
+    {x: 490, y: 100, sound: 6},
+    {x: 540, y: 160, sound: 7},
+
+    {x: 60, y: 520, sound: 0},
+    {x: 120, y: 460, sound: 1},
+    {x: 200, y: 490, sound: 2},
+    {x: 280, y: 490, sound: 3},
+    {x: 340, y: 430, sound: 4},
+    {x: 400, y: 490, sound: 5},
+    {x: 460, y: 430, sound: 6},
+    {x: 500, y: 490, sound: 7},
+];
 
 function setup() {
     createCanvas(600, 700);
@@ -111,10 +131,13 @@ function mousePressed() {
 
     if(!mouseButton.left) return;
 
-    if (checkNoteClicked(140, 190)) {
+    for (let n of notes) {
+        if (checkNoteClicked(n.x, n.y)) {
         sounds[0].currentTime = 0;
         sounds[0].play();
+        }
     }
+    
 }
 
 function checkNoteClicked(x,y) {
