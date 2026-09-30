@@ -20,3 +20,13 @@ Upon clicking on my website, especially after having trying to fix my repository
 Beyong the technicaly difficulties regarding my repository, I have understood just how difficult it is to work with triangles. Every value holds important, turning most experiences very time consuming and frustrating, but all the more satisfying once you finish and reach the results that you desire. 
 
 Taking on 3 projects as a jump from our initial assignment, but I feel as though it allowed me to play around alot with the different ways to code and incorparate the different shapes in p5.js.
+
+## September 29, 2026
+
+This assignment was the most interesting out of the previous ones I have completed. At first, I found it hard to think or come up with any source of ideas or finding inspiration in regards of this project as there is such a wide variety of things that opens once you introduce variables in coding! 
+
+I personally find that prototype 2 is my favorite out of the three, as it allowed me to incorperate a little bit of my own personality as a musician. It equally allowed me to learn more about music and sounds within the p5.js system, to an even more dept that before. 
+
+In terms of coding with p5, I've definitely noticed myself being more motivated and better at things involving sound in my projects as it pushes me to want to make something even cooler. 
+
+Prior to this experience and experimentation with variables, I had always felt lost when using them and not necessarily understand when/how/why they should be used and when is the right time? But now that I've gone through the process after watching the class lecture videos and going even further in dept with other youtube videos, those prior questions are now a lot more clearer to me.
