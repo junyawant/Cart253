@@ -15,14 +15,14 @@
 let sounds = [];
 
 function preload() {
-sounds.push(loadSound('note1.mp3'));
-sounds.push(loadSound('note2.mp3'));
-sounds.push(loadSound('note3.mp3'));
-sounds.push(loadSound('note4.mp3'));
-sounds.push(loadSound('note5.mp3'));
-sounds.push(loadSound('note6.mp3'));
-sounds.push(loadSound('note7.mp3'));
-sounds.push(loadSound('note8.mp3'));
+sounds.push(loadSound('sounds/note1.mp3'));
+sounds.push(loadSound('sounds/note2.mp3'));
+sounds.push(loadSound('sounds/note3.mp3'));
+sounds.push(loadSound('sounds/note4.mp3'));
+sounds.push(loadSound('sounds/note5.mp3'));
+sounds.push(loadSound('sounds/note6.mp3'));
+sounds.push(loadSound('sounds/note7.mp3'));
+sounds.push(loadSound('sounds/note8.mp3'));
 }
 
 function setup() {
@@ -106,15 +106,12 @@ function draw() {
     text("14", 500, 490);
 
     pop();
+}
 
 function mousePressed() {
-    if (checkNoteClicked(140, 190)) sounds[0].play();
-    if (checkNoteClicked(190, 130)) sounds[1].play();
-    if (checkNoteClicked(250, 160)) sounds[2].play();
-    if (checkNoteClicked(320, 160)) sounds[3].play();
-    if (checkNoteClicked(370, 100)) sounds[4].play();
-    if (checkNoteClicked(430, 160)) sounds[5].play();
-    if (checkNoteClicked(490, 100)) sounds[6].play();
-    if (checkNoteClicked(540, 160)) sounds[7].play();
-}
+if(mouseButton !== LEFT) return;
+
+    if (checkNoteClicked(140, 190)) {
+        sounds[0].play();
+    }
 }
