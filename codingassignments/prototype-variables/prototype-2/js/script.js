@@ -17,10 +17,16 @@ let sounds = [];
 function setup() {
     createCanvas(600, 700);
     
-    for (let i = i; i <= 8; i++) {
-        sounds.push(new Audio('sounds/note${i}.mp3'));
-    }
-    console.log("sounds loaded:", sounds.length);
+    sounds.push(new Audio("assets/sounds/note1.mp3"));
+    sounds.push(new Audio("assets/sounds/note2.mp3"));
+    sounds.push(new Audio("assets/sounds/note3.mp3"));
+    sounds.push(new Audio("assets/sounds/note4.mp3"));
+    sounds.push(new Audio("assets/sounds/note5.mp3"));
+    sounds.push(new Audio("assets/sounds/note6.mp3"));
+    sounds.push(new Audio("assets/sounds/note7.mp3"));
+    sounds.push(new Audio("assets/sounds/note8.mp3"));
+
+    console.log("sounds loaded:", sounds.length); 
 }
 
 /**
@@ -103,7 +109,7 @@ function draw() {
 
 function mousePressed() {
 
-    if(mouseButton.left) return;
+    if(!mouseButton.left) return;
 
     if (checkNoteClicked(140, 190)) {
         sounds[0].currentTime = 0;
