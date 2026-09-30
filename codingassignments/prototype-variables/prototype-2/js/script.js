@@ -23,7 +23,7 @@ const notes = [
     {x: 430, y: 160, sound: 5},
     {x: 490, y: 100, sound: 6},
     {x: 540, y: 160, sound: 7},
-
+    //Lower Strings
     {x: 60, y: 520, sound: 0},
     {x: 120, y: 460, sound: 1},
     {x: 200, y: 490, sound: 2},
@@ -133,6 +133,7 @@ function mousePressed() {
 
     for (let n of notes) {
         if (checkNoteClicked(n.x, n.y)) {
+        console.log("sound index:", n.sound, "file:", sounds[n.sound].src )
         sounds[0].currentTime = 0;
         sounds[0].play();
         }
