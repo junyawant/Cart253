@@ -2,15 +2,10 @@
  * Circled Sun
  * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This prototype is meant to micmic the rotation of planets around the sun. 4 things can be seen. (1)Stars, (2)Sun (3)Earth and (4)Mars
  */
 
 "use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 
 let rotationAmount = 0;
 let stars = [];
@@ -30,10 +25,6 @@ function setup() {
     }
 }
 
-
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
 //Draws Stars + Sun + Planet (each frame)
 function draw() {
     background("#000000");
@@ -43,7 +34,6 @@ function draw() {
     drawSun();
     drawEarth();
     drawMars();
-
 }
 
 function drawStars() {
@@ -60,17 +50,12 @@ function drawSun(){
     //Rotation
     translate(width / 2, height / 2);
     rotate (rotationAmount);
-    
-    //Draws the sun
-    fill("#c3aa3c");
-    ellipse (0, 0, 100, 75);
 
-    //Draws a little glow/outline around the sun (just for detail + look better/prettier)
+    //Draws the sun
     noStroke();
     fill("#a78f24");
     ellipse(0, 0, 140, 115);
     pop ();
-
 }
 
 function drawEarth(){
