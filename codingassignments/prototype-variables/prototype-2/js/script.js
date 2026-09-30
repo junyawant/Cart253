@@ -14,21 +14,13 @@
 //An array to hold audio files
 let sounds = [];
 
-function preload() {
-sounds.push(loadSound('sounds/note1.mp3'));
-sounds.push(loadSound('sounds/note2.mp3'));
-sounds.push(loadSound('sounds/note3.mp3'));
-sounds.push(loadSound('sounds/note4.mp3'));
-sounds.push(loadSound('sounds/note5.mp3'));
-sounds.push(loadSound('sounds/note6.mp3'));
-sounds.push(loadSound('sounds/note7.mp3'));
-sounds.push(loadSound('sounds/note8.mp3'));
-}
-
 function setup() {
     createCanvas(600, 700);
-     console.log("sounds loaded:", sounds.length);
-
+    
+    for (let i = i; i <= 8; i++) {
+        sounds.push(new Audio('sounds/note${i}.mp3'));
+    }
+    console.log("sounds loaded:", sounds.length);
 }
 
 /**
@@ -110,15 +102,15 @@ function draw() {
 }
 
 function mousePressed() {
-    userStartAudio();
 
-    console.log("mouseButton is", mouseButton);
-
-    let isLeft = (mouseButton === LEFT) || (mouseButton && mouseButton.left);
-    if(!isLeft) return;
+    if(mouseButton.left) return;
 
     if (checkNoteClicked(140, 190)) {
-        console.log("hit the first 12, loaded?", sounds[0].isLoaded());
+        sounds[0].currentTime = 0;
         sounds[0].play();
     }
+}
+
+function checkNoteClicked(x,y) {
+    return abs(mouseX - x) < 20 && abs(mouseY - y) < 15;
 }
