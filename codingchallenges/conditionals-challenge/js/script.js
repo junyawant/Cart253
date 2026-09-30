@@ -1,21 +1,26 @@
-//TOOK THIS CODE FROM THE OVERLAPPING CIRCLE EXAMPLE
-
-let targetCircle = {
-  x: 200,
-  y: 200,
+const target = {
+  x: 350,
+  y: 50,
   size: 100,
-  fill: "#ff0000", // red to start
+  fill: "#02A9EA",
   fills: {
-    noOverlap: "#ff0000", // red for no overlap
-    overlap: "#00ff00" // green for overlap
+    noOverlap: "#02A9EA",
+    overlap: "#FF01FB"
   }
 };
 
-let userCircle = {
+const puck = {
+  x: 200,
+  y: 200,
+  size: 80,
+  fill: "#ff0000"
+};
+
+const user = {
   x: undefined, // will be mouseX
   y: undefined, // will be mouseY
   size: 75,
-  fill: "#000000"
+  fill: 255
 };
 
 /**
@@ -29,41 +34,101 @@ function setup() {
  * Move the user circle, check for overlap, draw the two circles
  */
 function draw() {
-  background("#aaaaaa");
+  background(0);
 
   // Move user circle
-  userCircle.x = mouseX;
-  userCircle.y = mouseY;
+  moveUser();
 
   //Move puck
   movePuck();
 
-  // Check overlap
+  //Check target
+  checkTarget();
 
-  // Calculate distance between circles' centres
-  let d = dist(userCircle.x, userCircle.y, targetCircle.x, targetCircle.y);
+  //Draw target
+  drawTarget();
+
+  // Draw the user and puck
+  drawUser();
+  drawPuck();
+}
+
+/**
+ * Sets the user position to the mouse position
+ */
+function moveUser() {
+  user.x = mouseX;
+  user.y = mouseY;
+}
+
+/**
+ * Displays the user circle
+ */
+function drawUser() {
+  push();
+  noStroke();
+  fill(user.fill);
+  ellipse(user.x, user.y, user.size);
+  pop();
+}
+
+/**
+ * Displays the puck circle
+ */
+function drawPuck() {
+  push();
+  noStroke();
+  fill(puck.fill);
+  ellipse(puck.x, puck.y, puck.size);
+  pop();
+}
+
+function movePuck() {
+  const d = dist(user.x, user.y, puck.x, puck.y);
   // Check if that distance is smaller than their two radii, 
   // because if it is, they are overlapping by the amazing
   // power of geometry!
-  let overlap = (d < userCircle.size / 2 + targetCircle.size / 2);
+  const overlap = (d < user.size / 2 + puck.size / 2);
   // Set fill based on whether they overlap
   if (overlap) {
-    targetCircle.fill = targetCircle.fills.overlap;
+    if (user.x <= puck.x) {
+      puck.x += 1
+    }
+    if (user.x >= puck.x) {
+      puck.x += -1
+    }
+  }
+
+  if (overlap) {
+    if (user.y <= puck.y) {
+      puck.y += 1
+    }
+    if (user.y >= puck.y) {
+      puck.y += -1
+    }
+  }
+}
+
+function drawTarget() {
+  push();
+  noStroke();
+  fill(target.fill);
+  ellipse(target.x, target.y, target.size);
+  pop();
+}
+
+
+function checkTarget() {
+
+  const d = dist(puck.x, puck.y, target.x, target.y);
+
+  const overlap = (d < puck.size / 2 + target.size / 2);
+
+  if (overlap) {
+    target.fill = target.fills.overlap;
   }
   else {
-    targetCircle.fill = targetCircle.fills.noOverlap;
+    target.fill = target.fills.noOverlap;
   }
 
-  // Draw the two circles
-  push();
-  noStroke();
-  fill(targetCircle.fill);
-  ellipse(targetCircle.x, targetCircle.y, targetCircle.size);
-  pop();
-
-  push();
-  noStroke();
-  fill(userCircle.fill);
-  ellipse(userCircle.x, userCircle.y, userCircle.size);
-  pop();
 }
