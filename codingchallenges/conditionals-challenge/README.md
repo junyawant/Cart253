@@ -1,23 +1,17 @@
-# TITLE OF PROJECT
+# Puck
 
-AUTHOR NAME
+## A project by Erica Galvez, Sabrina Rath & Konstatinos Christodoulakis
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://sabiewasabi.github.io/CART253/topics/conditionals-challenge/)
+
+![puck](assets/images/puck.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This project is meant to simulate a puck (similar to air hockey) that can be moved by the user. When said user moves the puck towards the target in blue, the target will then change color to pink.
+
+This experience is controlled via a mouse while moving your cursor in order to collide with the red puck towards the (blue) target.     
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
