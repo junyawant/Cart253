@@ -23,6 +23,7 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 #### Variables
 - [Prototype 1](codingassignments/prototype-variables/prototype-1/README.md)
 - [Prototype 2](codingassignments/prototype-variables/prototype-2/README.md)
+- [Prototype 3](codingassignments/prototype-variables/prototype-3/README.md)
 
 ### Challenges
 - [Instructions Challenge](codingchallenges/instructions-challenge/README.md)
