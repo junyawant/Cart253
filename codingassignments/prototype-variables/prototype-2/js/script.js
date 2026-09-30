@@ -112,11 +112,13 @@ function draw() {
 function mousePressed() {
     userStartAudio();
 
-    console.log("clicked at", mouseX, mouseY);
+    console.log("mouseButton is", mouseButton);
 
-    if(mouseButton !== LEFT) return;
+    let isLeft = (mouseButton === LEFT) || (mouseButton && mouseButton.left);
+    if(!isLeft) return;
 
     if (checkNoteClicked(140, 190)) {
+        console.log("hit the first 12, loaded?", sounds[0].isLoaded());
         sounds[0].play();
     }
 }
