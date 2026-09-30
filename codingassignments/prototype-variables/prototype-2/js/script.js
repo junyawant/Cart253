@@ -119,23 +119,23 @@ function draw() {
 
     //Singular Notes/Tabs
     //Upper Strings
-    text("12", 140, 190);
-    text("15", 190, 130);
-    text("14", 250, 160);
-    text("12", 320, 160);
-    text("15", 370, 100);
-    text("14", 430, 160);
-    text("14", 490, 100);
-    text("14", 540, 160);
+    tabText("12", 140, 190);
+    tabText("15", 190, 130);
+    tabText("14", 250, 160);
+    tabText("12", 320, 160);
+    tabText("15", 370, 100);
+    tabText("14", 430, 160);
+    tabText("14", 490, 100);
+    tabText("14", 540, 160);
     //Lower Strings
-    text("12", 60, 520);
-    text("15", 120, 460);
-    text("14", 200, 490);
-    text("12", 280, 490);
-    text("15", 340, 430);
-    text("14", 400, 490);
-    text("14", 460, 430);
-    text("14", 500, 490);
+    tabText("12", 60, 520);
+    tabText("15", 120, 460);
+    tabText("14", 200, 490);
+    tabText("12", 280, 490);
+    tabText("15", 340, 430);
+    tabText("14", 400, 490);
+    tabText("14", 460, 430);
+    tabText("14", 500, 490);
 
     pop();
 }
@@ -159,4 +159,15 @@ function mousePressed() {
 
 function checkNoteClicked(x,y) {
     return abs(mouseX - x) < 20 && abs(mouseY - y) < 15;
+}
+
+//function that outlines if the mouse is pressed on it
+function tabText(label, x, y) {
+    if(mouseIsPressed && mouseButton.left && checkNoteClicked(x, y)) {
+        stroke("#791111");
+        strokeWeight(4);
+    } else {
+        noStroke();
+    }
+    text(label, x, y);
 }
