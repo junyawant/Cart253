@@ -36,8 +36,13 @@ function draw() {
     ellipse (200, 200, 300, 300);
     //Smaller CD
     fill("#b11313");
-    ellipse (200, 200, 60, 60);
-    
+    ellipse (200, 200, 80, 80);
+    //Even smaller CD (Middle Point)
+    fill("#ffffff");
+    ellipse (200, 200, 15, 15);
+    //Details on the CD
+  
+
 
 
 }
