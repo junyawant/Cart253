@@ -18,6 +18,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(400, 400);
 
 }
 
@@ -26,5 +27,17 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#e0dcdc30");
+    
+    //Drawing the CD Disk
+    noStroke();
+    //Bigger CD
+    fill("#000000");
+    ellipse (200, 200, 300, 300);
+    //Smaller CD
+    fill("#b11313");
+    ellipse (200, 200, 60, 60);
+    
+
 
 }
