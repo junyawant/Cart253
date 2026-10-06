@@ -39,7 +39,7 @@ function draw() {
     }
 
     if (speed > MAX_SPEED) {
-        spped = MAX_SPEED;
+        speed = MAX_SPEED;
     }
 
     if (speed < 0) {
@@ -58,6 +58,21 @@ function draw() {
     fill("#000000");
     ellipse (0, 0, 300, 300);
 
+    //Details that show the CD is spinning (hard to tell without it)
+    noStroke();
+    fill("#ffffff60");
+    triangle(0, 0, 141, -51, 141, 51);
+    triangle(0, 0, -141, -51, -141, 51);
+
+    //Details on the CD
+    noFill();
+    stroke("#ffffff40");
+    strokeWeight(1);
+    ellipse (0, 0, 250, 250);
+    ellipse (0, 0, 200, 200);
+    ellipse (0, 0, 150, 150);
+    ellipse (0, 0, 100, 100);
+
     //Smaller CD
     fill("#b11313");
     ellipse (0, 0, 80, 80);
@@ -66,14 +81,9 @@ function draw() {
     fill("#ffffff");
     ellipse (0, 0, 15, 15);
     
-    //Details on the CD
-    nofill();
-    stroke("#ffffff20");
-    strokeWeight(1);
-    ellipse (0, 0, 250, 250);
-    ellipse (0, 0, 200, 200);
-    ellipse (0, 0, 150, 150);
-    ellipse (0, 0, 100, 100);
+    
+
+    pop();
   
 
 
