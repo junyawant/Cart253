@@ -13,6 +13,8 @@ Erica Galvez
 
 This prototype is a remake of a normal disk that turns in a rotation using IF statements and mouse pressed.
 
+## How it Works
+
 To interact with this project, use LMB and click on the sketch when it is opened and the disk should spin.
 
 ## Attribution
