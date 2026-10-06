@@ -50,7 +50,7 @@ function draw() {
     background("#000000");
 
     push();
-    translate(200, 200);
+    translate(targetX, targetY);
     noFill();
     stroke("#951313");
 
