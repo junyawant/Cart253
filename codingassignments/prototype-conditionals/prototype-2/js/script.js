@@ -11,15 +11,23 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+let targetX = 200; //CURRENT position of the target
+let targetY = 200;
+
 function setup() {
     createCanvas(400, 400);
-
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
+
+function mousePressed() {
+    targetX = mouseX;
+    targetY = mouseY;
+}
+
 function draw() {
     background("#000000");
 
