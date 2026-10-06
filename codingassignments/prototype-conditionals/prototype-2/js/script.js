@@ -26,6 +26,24 @@ function setup() {
 function mousePressed() {
     targetX = mouseX;
     targetY = mouseY;
+
+    //CONDITIONALS (Keeping target within the canvas)
+
+    if (targetX < 55) {
+        targetX = 55;
+    }
+
+    if (targetX > width - 55) {
+        targetX = width - 55;
+    }
+
+    if (targetY < 55) {
+        targetY = 55;
+    }
+
+    if (targetY > height - 55) {
+        targetY = height - 55;
+    }
 }
 
 function draw() {
