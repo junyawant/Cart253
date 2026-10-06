@@ -3,7 +3,7 @@
 
 # Loser Regardless
 
-## A project by Erica Galvez, Sabrina Rath and Konstantinos Christodoulakis
+## A project by Erica Galvez, Sabrina Rath
 
 [View this project online](https://junyawant.github.io/Cart253/codingchallenges/events-challenge/)
 
