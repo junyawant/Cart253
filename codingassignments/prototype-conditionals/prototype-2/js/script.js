@@ -1,5 +1,5 @@
 /**
- * Title of Project
+ * Locked Target
  * Author Name
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
@@ -23,15 +23,26 @@ function setup() {
 function draw() {
     background("#000000");
 
-    //Drawing the target symbol
+    push();
+    translate(200, 200);
+    noFill();
     stroke("#951313");
-    strokeWeight(1);
-    line(200, 200, 200, 50);
-    line(200, 200, 350, 200);
-    line(200, 200, 200, 350);
-    line(200, 200, 50, 200);
 
+    //Drawing the target symbol
+
+    //Big Outer Ring
+    strokeWeight(4);
+    ellipse(0, 0, 50, 50);
     
+    //Smaller Inner Ring
+    strokeWeight(1);
+    ellipse (0, 0, 50, 50);
+
+    //Crosshair (lines throughout whole target)
+    strokeWeight(1);
+    line(0, -25, 0, 25);
+    line(-25, 0, 25, 0);
+
 
 
 }

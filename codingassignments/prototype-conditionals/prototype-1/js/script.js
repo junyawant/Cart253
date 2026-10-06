@@ -1,6 +1,6 @@
 /**
  * Turning Disk
- * Author Name
+ * Erica Galvez
  * 
  * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
  * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
@@ -20,7 +20,7 @@
 
 let angle = 0;
 let speed = 0; //
-const MAX_SPEED = 0.1; //fastest speed that the disk can spin
+const MAX_SPEED = 0.3; //fastest speed that the disk can spin
 function setup() {
     createCanvas(400, 400);
 }
@@ -30,12 +30,12 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#e0dcdc30");
+    background("#e0dcdc1f");
 
     if (mouseIsPressed) {
         speed += 0.01;
     } else {
-        speed -= 0.05;
+        speed -= 0.005;
     }
 
     if (speed > MAX_SPEED) {
@@ -66,7 +66,7 @@ function draw() {
 
     //Details on the CD
     noFill();
-    stroke("#ffffff40");
+    stroke("#ffffff28");
     strokeWeight(1);
     ellipse (0, 0, 250, 250);
     ellipse (0, 0, 200, 200);
@@ -80,12 +80,7 @@ function draw() {
     //Even smaller CD (Middle Point)
     fill("#ffffff");
     ellipse (0, 0, 15, 15);
-    
-    
 
     pop();
   
-
-
-
 }
