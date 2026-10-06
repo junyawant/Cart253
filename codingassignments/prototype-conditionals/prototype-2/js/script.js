@@ -32,7 +32,7 @@ function draw() {
 
     //Big Outer Ring
     strokeWeight(4);
-    ellipse(0, 0, 50, 50);
+    ellipse(0, 0, 80, 80);
     
     //Smaller Inner Ring
     strokeWeight(1);
@@ -40,8 +40,24 @@ function draw() {
 
     //Crosshair (lines throughout whole target)
     strokeWeight(1);
-    line(0, -25, 0, 25);
-    line(-25, 0, 25, 0);
+    line(0, -55, 0, 55);
+    line(-55, 0, 55, 0);
+
+    //Thicker crosshair (ends of crosshair outside of the rings)
+    strokeWeight(4);
+    line(0, -55, 0, -38);
+    line(0, 55, 0, 38);
+    line(-55, 0, -38, 0);
+    line(55, 0, 38, 0);
+    
+    //Inner + Sign
+    strokeWeight(3);
+    line(-12, 0, -6, 0);
+    line(6, 0, 12, 0);
+    line(0, -12, 0, -6);
+    line(0, 6, 0, 12);
+
+    pop();
 
 
 
