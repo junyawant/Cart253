@@ -2,21 +2,11 @@
  * Turning Disk
  * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
- * 
- * Some ideas for all 3 prototypes:
- * - Make a disk that turns using IF statements (?)
- * - A target symbol that changes position based on mouse position (?)
- * - A clock that has hands that move based on the time of day (?)
+ * This prototype is a remake of a normal disk that turns in a rotation using IF statements and mouse pressed. The original vision was to make it quite similar to  old record players, but i want to focus more on its design (conditions) than the aesthetic.
  * 
  */
 
 "use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 
 let angle = 0;
 let speed = 0; //
@@ -27,7 +17,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Use LMB to make the disk rotate faster, and release it to make it slow down. 
 */
 function draw() {
     background("#e0dcdc1f");
