@@ -19,7 +19,13 @@ function setup() {
  * Update the score and display the UI
  */
 function draw() {
-    background("#3adb3d");
+    //Green when winning, if not --> red when lost
+
+    if(gameOver) {
+        background("#c80b0b");
+    } else {
+        background("#11c711");
+    }
 
     // Only increase the score if the game is not over
     if (!gameOver) {
