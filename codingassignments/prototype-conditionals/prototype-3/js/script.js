@@ -25,6 +25,21 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+
+    //ONLY turn if the mouse is pressed or being held down
+    if (mouseIsPressed) {
+
+        if(mouseButton === LEFT
+            || mouseButton.left) {
+                minuteAngle += 0.05;
+            } else if (mouseButton === RIGHT 
+            || mouseButton.right) {
+                minuteAngle += 0.05;
+            }
+    }
+
+    hourAngle = minuteAngle/12; //(this hand moves 12x more slower)
+
     background("#000000");
     noFill();
     stroke(255);
