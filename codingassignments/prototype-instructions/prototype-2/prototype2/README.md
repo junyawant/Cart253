@@ -5,8 +5,8 @@
 
 ## Erica Galvez
 
-[View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/)
-[View the code for the project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-instructions/prototype-2/prototype2/js/script.js)
+- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-instructions/prototype-2/prototype2/)
+- [View the code for the project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-instructions/prototype-2/prototype2/js/script.js)
 
 ![expandedthoughts](../prototype2/assets/images/expandedthoughts.png)
 
