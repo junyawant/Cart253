@@ -34,7 +34,7 @@ function draw() {
                 minuteAngle += 0.05;
             } else if (mouseButton === RIGHT 
             || mouseButton.right) {
-                minuteAngle += 0.05;
+                minuteAngle -= 0.05;
             }
     }
 
