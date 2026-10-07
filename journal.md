@@ -30,3 +30,13 @@ I personally find that prototype 2 is my favorite out of the three, as it allowe
 In terms of coding with p5, I've definitely noticed myself being more motivated and better at things involving sound in my projects as it pushes me to want to make something even cooler. 
 
 Prior to this experience and experimentation with variables, I had always felt lost when using them and not necessarily understand when/how/why they should be used and when is the right time? But now that I've gone through the process after watching the class lecture videos and going even further in dept with other youtube videos, those prior questions are now a lot more clearer to me.
+
+## October 6, 2026
+
+This assignment was the most interesting as I have always found that if statements (albeit sometimes becoming confusing) are wonderful additions to coding, especially with javascript as they open a whole new door of possibilities! It makes many projects feel a lot more interact and even personal at times. 
+
+For these prototypes, I tried not to think too much about the aesthetics of my pieces but moreso its functionality! In previous projects, I had always tried to fit a certain aesthetic or a level of detail if I could which would sometimes complicate my life for no reason at all. Being able to simplify my visions into projects that actually do work is incredibly mind refreshing! 
+
+A cool and interesting thing I would love to begin adding more to my projects is definitely sound. While I've played alot with it in previous projects as I have a incredibly profound interest and passion in music, I would love to build on it more as it makes each piece feel even more immersive. 
+
+I would equally want to try and attempt making my projects full screen to be able to fully submerge in my works and make users feel attracted to wanting to try it out, similar to how people tend to want to play cool/interesting video games and/or art that look unique when seen from afar! I want users to approach my projects with that kind of enthusiasm and hope to be able to implement that in my projects soon.
