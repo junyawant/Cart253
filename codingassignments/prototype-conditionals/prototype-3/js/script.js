@@ -36,35 +36,32 @@ function draw() {
     //Lines that are straight (No rotation needed)
     rect(200, 25, 5, 15); //top line
     rect(200, 360, 5, 15); //bottom line
+    rect(26, 200, 13, 5);
+    rect(360, 200, 13, 5);
 
     //Rotated Lines
-
-
 
     pop();
 
 
     //Drawing the time
-    push();
     fill("#FFFFFF");
     noStroke();
-    textStyle(NORMAL);
-    textSize(45);
+    textStyle("Times New Roman");
+    textSize(28);
     textAlign(CENTER, CENTER);
     //Adding Roman Numerals as time displays
-    //text("I", 260, 86);
-    //text("II", 300, 100);
-    //text("III", 200, 320);
-    //text("IV", 80, 200);
-    //text("V", 140, 140);
-    //text("VI", 260, 140);
-   // text("VII", 140, 260);
-   // text("VIII", 260, 260);
-    //text("IX", 200, 200);
-   // text("X", 200, 140);
-   // text("XI", 140, 200);
-    //text("XII", 200, 70);
-
-    pop();
+    text("I", 200, 68);
+    text("II", 266, 86);
+    text("III", 314, 134);
+    text("IV", 332, 200);
+    text("V", 314, 266);
+    text("VI", 266, 314);
+    text("VII", 200, 332);
+    text("VIII", 134, 314);
+    text("IX", 86, 266);
+    text("X", 68, 200);
+    text("XI", 86, 134);
+    text("XII", 134, 86);
 
 }
