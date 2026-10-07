@@ -1,28 +1,23 @@
 /**
- * Clockwise
+ * Time is ticking
  * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This prototype is a clock that simulates its use of telling the time. The clock can go both clockwise and counterclockwise depending on the mouse button you chose to hold down!
  */
 
 "use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 
 let minuteAngle = 0; //hand where minute is pointing
 let hourAngle = 0; //hand where hour is pointing
 
 function setup() {
     createCanvas(400, 400);
-
 }
 
-
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * How it Works
+ * Hold down the LMB mouse button to turn the clock closewise
+ * Hold down the RMB to turn the clock counterclockwise
 */
 function draw() {
 
@@ -57,11 +52,7 @@ function draw() {
     rect(200, 360, 5, 15); //bottom line
     rect(26, 200, 13, 5);
     rect(360, 200, 13, 5);
-
-    //Rotated Lines
-
     pop();
-
 
     //Drawing the time
     fill("#FFFFFF");
@@ -69,6 +60,7 @@ function draw() {
     textFont("Times New Roman");
     textSize(26);
     textAlign(CENTER, CENTER);
+
     //Adding Roman Numerals as time displays
     text("I", 200, 68);
     text("II", 266, 86);
@@ -111,5 +103,4 @@ function draw() {
     strokeWeight(2);
     ellipse(200, 200, 15, 15);
     pop();
-
 }
