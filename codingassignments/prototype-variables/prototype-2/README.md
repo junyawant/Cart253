@@ -5,7 +5,8 @@
 
 ## Erica Galvez
 
-[View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-2/)
+- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-2/)
+- [View the project link here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-2/js/script.js)
 
 ![tabsimage](../prototype-2/assets/images/sweetochildofmine.png)
 
