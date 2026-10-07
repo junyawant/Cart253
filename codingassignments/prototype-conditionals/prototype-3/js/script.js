@@ -35,23 +35,25 @@ function draw() {
 
     hourAngle = minuteAngle/12; //(this hand moves 12x more slower)
 
+    //Drawing background
     background("#000000");
+
+    //Drawing the main clock 
     noFill();
     stroke(255);
-    //Drawing the main clock 
     ellipse(200, 200, 320, 320);
     ellipse(200, 200, 350, 350);
     ellipse(200, 200, 210, 210);
     ellipse(200, 200, 180, 180);
 
+    //Main points of a clock (12, 3, 6 and 9)
     push();
     fill("#FFFFFF");
     strokeWeight(2);
-    //Lines that are straight (No rotation needed)
     rect(200, 25, 5, 15); //top line
     rect(200, 360, 5, 15); //bottom line
-    rect(26, 200, 13, 5);
-    rect(360, 200, 13, 5);
+    rect(26, 200, 13, 5); //left line
+    rect(360, 200, 13, 5); //right line
     pop();
 
     //Drawing the time
