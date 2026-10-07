@@ -6,7 +6,7 @@
 ## Erica Galvez
 
 - [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-3/)
-- [View the project link here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-3/js/script.js)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-3/js/script.js)
 
 ![circledsun](./assets/images/circledsun.png)
 
