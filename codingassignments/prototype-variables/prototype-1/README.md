@@ -5,8 +5,8 @@
 
 ## Erica Galvez
 
-[View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-1/)
-[View the project link here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-1/js/script.js)
+- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-1/)
+- [View the project link here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-1/js/script.js)
 
 ![CrimsonView](../prototype-1/assets/images/crimsonview.png)
 
