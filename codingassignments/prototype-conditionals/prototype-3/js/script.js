@@ -51,8 +51,8 @@ function draw() {
     //Drawing the time
     fill("#FFFFFF");
     noStroke();
-    textStyle("Times New Roman");
-    textSize(28);
+    textFont("Times New Roman");
+    textSize(26);
     textAlign(CENTER, CENTER);
     //Adding Roman Numerals as time displays
     text("I", 200, 68);
@@ -80,5 +80,21 @@ function draw() {
     pop();
 
     //Clock Hand (Minute)
+    push();
+    translate(200, 200);
+    rotate(minuteAngle);
+    stroke(255);
+    strokeWeight(3);
+    line(0, 0, 0, -85);
+    noStroke();
+    ellipse(0, -70, 10, 10);
+    pop();
+
+    //Center Circle
+    fill(0);
+    stroke(255);
+    strokeWeight(2);
+    ellipse(200, 200, 15, 15);
+    pop();
 
 }
