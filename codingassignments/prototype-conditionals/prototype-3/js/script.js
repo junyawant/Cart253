@@ -11,6 +11,10 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+let minuteAngle = 0; //hand where minute is pointing
+let hourAngle = 0; //hand where hour is pointing
+
 function setup() {
     createCanvas(400, 400);
 
@@ -63,5 +67,18 @@ function draw() {
     text("X", 68, 200);
     text("XI", 86, 134);
     text("XII", 134, 86);
+
+    //Clock Hand (Hour)
+    push();
+    translate(200, 200);
+    rotate(hourAngle);
+    stroke(255);
+    strokeWeight(5);
+    line(0, 0, 0, -55);
+    noStroke();
+    ellipse(0, -45, 12, 12);
+    pop();
+
+    //Clock Hand (Minute)
 
 }
