@@ -82,6 +82,22 @@ function draw() {
     image(ashImg, ashX, ashY, 80, 110);
 }
 
+function moveAsh() {
+    if (keyIsDown(LEFT_ARROW)) {
+        ashX = ashY - ashSpeed;
+    }
+    if (keyIsDown(RIGHT_ARROW)) {
+        ashX = ashY + ashSpeed;
+    }
+    if (keyIsDown(UP_ARROW)) {
+        ashX = ashY - ashSpeed;
+    }
+    if (keyIsDown(DOWN_ARROW)) {
+        ashX = ashY + ashSpeed;
+    }
+
+}
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
