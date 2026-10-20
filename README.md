@@ -31,37 +31,37 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 
 
 ### Variables
-- [PROTOTYPE 1](codingassignments/prototype-variables/prototype-1/README.md)
+#### [PROTOTYPE 1](codingassignments/prototype-variables/prototype-1/README.md)
 ![Screenshot of Prototype 1](./codingassignments/prototype-variables/prototype-1/assets/images/crimsonview.png)
-- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-1/)
-- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-1/js/script.js)
+1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-1/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-1/js/script.js)
 
-- [PROTOTYPE 2](codingassignments/prototype-variables/prototype-2/README.md)
+#### [PROTOTYPE 2](codingassignments/prototype-variables/prototype-2/README.md)
 ![Screenshot of Prototype 2](./codingassignments/prototype-variables/prototype-2/assets/images/sweetochildofmine.png)
-- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-2/)
-- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-2/js/script.js)
+1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-2/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-2/js/script.js)
 
-- [PROTOTYPE 3](codingassignments/prototype-variables/prototype-3/README.md)
+#### [PROTOTYPE 3](codingassignments/prototype-variables/prototype-3/README.md)
 ![Screenshot of Prototype 3](./codingassignments/prototype-variables/prototype-3/assets/images/circledsun.png)
-- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-3/)
-- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-3/js/script.js)
+1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-variables/prototype-3/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-variables/prototype-3/js/script.js)
 
 
 ### Conditionals
-- [PROTOTYPE 1](codingassignments/prototype-conditionals/prototype-1/README.md)
+#### [PROTOTYPE 1](codingassignments/prototype-conditionals/prototype-1/README.md)
 ![Screenshot of Prototype 1](./codingassignments/prototype-conditionals/prototype-1/assets/images/turning-disk.png)
-- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-conditionals/prototype-1/)
-- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-conditionals/prototype-1/js/script.js)
+1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-conditionals/prototype-1/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-conditionals/prototype-1/js/script.js)
 
-- [PROTOTYPE 2](codingassignments/prototype-conditionals/prototype-2/README.md)
+#### [PROTOTYPE 2](codingassignments/prototype-conditionals/prototype-2/README.md)
 ![Screenshot of Prototype 2](./codingassignments/prototype-conditionals/prototype-2/assets/images/locked-target.png)
-- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-conditionals/prototype-2/)
-- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-conditionals/prototype-2/js/script.js)
+1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-conditionals/prototype-2/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-conditionals/prototype-2/js/script.js)
 
-- [PROTOTYPE 3](codingassignments/prototype-conditionals/prototype-3/README.md)
+#### [PROTOTYPE 3](codingassignments/prototype-conditionals/prototype-3/README.md)
 ![Screenshot of Prototype 3](./codingassignments/prototype-conditionals/prototype-3/assets/images/time-is-ticking.png)
-- [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-conditionals/prototype-3/)
-- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-conditionals/prototype-3/js/script.js)
+1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-conditionals/prototype-3/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-conditionals/prototype-3/js/script.js)
 
 
 ### Events
