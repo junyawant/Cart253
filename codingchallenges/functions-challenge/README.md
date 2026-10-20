@@ -5,7 +5,10 @@
 
 ## A project by Erica Galvez, Sabrina Rath
 
-[View this project online](https://junyawant.github.io/Cart253/codingchallenges/functions-challenge/)
+![Bouncyball](./assets/images/bouncyball.png)
+
+- [View this project online](https://junyawant.github.io/Cart253/codingchallenges/functions-challenge/)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingchallenges/functions-challenge/js/script.js)
 
 ## Description
 
