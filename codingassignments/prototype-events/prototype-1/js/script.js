@@ -45,10 +45,21 @@ let nextIndex = 0;
 //pokemon sizes
 const POKEMON_H = 300;
 
+//Loads my ladnscape image
+//Moved to the beginning so that the background amd every pokemon image loads before the sketch starts
+function preload() {
+
+    landscape = loadImage('assets/images/route2background.jpg');
+
+    for (let file of pokemonFiles) {
+        pokemonImages.push(loadImage(file));
+    }
+}
 
 //Creates the canvas to be relative to the (browser) windows properties (height and width)
 function setup() {
     createCanvas(windowWidth, windowHeight);
+    imageMode(CORNER);
 
 }
 
@@ -60,23 +71,35 @@ function draw() {
     background(220);
     image (landscape, 0, 0, width, height);
 
+    for (let card of placeCards) {
+        drawPokemon (card);
+    }
 }
 
-function drawCard(card) {
+function drawPokemon(card) {
+    //This keeps the original proportions of the image so that it doesnt stretch
+    let h = POKEMON_H
+    let w = card.img.width * (h / card.img.height);
+
     push();
-    imageMode
+    imageMode(CENTER);
+    image(card.img, card.x, card.y, w, h);
+    pop();
 }
 
-//Loads my image
-function preload() {
-    landscape = loadImage('assets/images/route2background.jpg');
+function mousePressed() {
+    let newCard = {
+        img: pokemonImages[nextIndenx],
+        x: mouseX,
+        y: mouseY
+    };
+    placeCards.push(newCard);
+
+    nextIndex = (nextIndex + 1) % pokemonImages.length;
 }
+
 
 //Function that resizes my image no matter the size of the window
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-}
-
-function mousePressed() {
-
 }
