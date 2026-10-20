@@ -115,7 +115,22 @@ function keyPressed() {
             bulbasaurCaught = true;
             message = "You caught Bulbasaur!";
         }
+        else if (charmanderCaught === false && dist (ashX, ashY, charmanderX, charmanderY) < catchDistance) {
+            charmanderCaught = true;
+            message = "You caught Charmander!";
+        }
+
+         else if (squirtleCaught === false && dist (ashX, ashY, squirtleX, squirtleY) < catchDistance) {
+            squirtleCaught = true;
+            message = "You caught Squirtle!";
+         }
+         else {
+            message = "Nothing close by, explore more!";
+         }
     }
+
+    //This stops the arrow keys and space from scrolling the page
+    return false;
 }
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
