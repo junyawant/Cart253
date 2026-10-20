@@ -60,7 +60,26 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    imageMode(CORNER);
     image (landscape, 0, 0, width, height);
+    imageMode(CENTER);
+
+    moveAsh();
+
+    //Only draw the pokemon that HAVE NOT gotten caught yet
+    if (bulbasaurCaught === false) {
+        image(bulbasaur, bulbasaurX, bulbasaurY, 120, 120);
+    }
+
+    if (charmanderCaught === false) {
+        image(charmander, charmanderX, charmanderY, 120, 120);
+    }
+
+    if (squirtleCaught === false) {
+        image(squirtle, squirtleX, squirtleY, 120, 120);
+    }
+
+    image(ashImg, ashX, ashY, 80, 110);
 }
 
 function windowResized() {
