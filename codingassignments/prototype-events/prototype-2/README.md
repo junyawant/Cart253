@@ -1,23 +1,26 @@
-# TITLE OF PROJECT
+---
+---
 
-AUTHOR NAME
+# Catch All the Starters!
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+## Erica Galvez
+
+- [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-events/prototype-2/)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-events/prototype-2/js/script.js)
+
+![gottacatchemall](./assets/images/gottacatchemall.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This project is meant to imitate those old pokemon games that first released in pixelated versions, on early DS handheld consoles. You walk around the map finding the 3 most popular starter pokemons and catch them all!
+
+## How It Works
+- Use the arrow keys to move Ash Ketchum around the map
+- Once near a pokemon, press SPACE to capture it with your pokeball!
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+> - The background image can be found [here](https://wallpapercave.com/w/wp14062133)
+> - The image for Ash Ketchum can be found [here](https://in.pinterest.com/pin/27443878974492426/)
+> - The images for the pokemon(s) can be found [here](https://www.ebay.ca/itm/165681689613)

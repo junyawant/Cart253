@@ -70,6 +70,11 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-events/prototype-1/)
 2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-events/prototype-1/js/script.js)
 
+#### [PROTOTYPE 2](/codingassignments/prototype-events/prototype-2/README.md)
+![Screenshot of Prototype 2](./codingassignments/prototype-events/prototype-2/assets/images/gottacatchemall.png)
+1. [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-events/prototype-2/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-events/prototype-2/js/script.js)
+
 
 ## Challenges
 - [Instructions Challenge](codingchallenges/instructions-challenge/README.md)

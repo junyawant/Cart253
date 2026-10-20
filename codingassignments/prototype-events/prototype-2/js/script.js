@@ -1,16 +1,11 @@
 /**
- * Title of Project
- * Author Name
+ * Catch All the Starters!
+ * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This project is meant to imitate those old pokemon games that first released in pixelated versions, on early DS handheld consoles. You walk around the map finding the 3 most popular starter pokemons and catch them all!
  */
 
 "use strict";
-
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 
 //Variables
 
@@ -60,6 +55,9 @@ function preload() {
     squirtle = loadImage('assets/images/squirtle.png');
 }
 
+/**
+ * Setup draws the canvas of the project, using its window width and height
+*/
 function setup() {
     createCanvas(windowWidth, windowHeight);
     imageMode(CORNER);
@@ -68,7 +66,7 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * My draw function holds the images for my pokemons and my pokemon trainer, as well as the text at the top of the screen
 */
 function draw() {
     imageMode(CORNER);
