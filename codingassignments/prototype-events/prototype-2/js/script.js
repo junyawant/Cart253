@@ -28,7 +28,7 @@ let ashSpeed = 5;
 //Variables for pokemon(s)
 let bulbasaur;
 let charmander;
-let squirtly;
+let squirtle;
 
 let bulbasaurX = 200;
 let bulbasaurY = 200;
@@ -99,16 +99,16 @@ function draw() {
 
 function moveAsh() {
     if (keyIsDown(LEFT_ARROW)) {
-        ashX = ashY - ashSpeed;
+        ashX = ashX - ashSpeed;
     }
     if (keyIsDown(RIGHT_ARROW)) {
-        ashX = ashY + ashSpeed;
+        ashX = ashX + ashSpeed;
     }
     if (keyIsDown(UP_ARROW)) {
-        ashX = ashY - ashSpeed;
+        ashY = ashY - ashSpeed;
     }
     if (keyIsDown(DOWN_ARROW)) {
-        ashX = ashY + ashSpeed;
+        ashY = ashY + ashSpeed;
     }
 
 }
