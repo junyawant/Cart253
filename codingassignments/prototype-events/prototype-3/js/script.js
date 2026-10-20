@@ -76,6 +76,11 @@ function draw() {
     text(message, width / 2, height * 0.08);
 
     //Guess Counter
+    textSize(22);
+    strokeWeight(4);
+    text("Guesses: " * attempts, width * 0.9, height * 0.05);
+
+    //Text After solving
     if (solved) {
         textSize(10);
         text("Press R or click anywhere to play again", width / 2, height * 0.97);
