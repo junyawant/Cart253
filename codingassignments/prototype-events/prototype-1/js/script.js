@@ -16,6 +16,26 @@
 //Variable for background photo
 let landscape;
 
+//Creating an array to hold all my loaded pokemon images in the assets folder
+let pokemonImages = [];
+
+//Calling on my images so that they EXIST in my sketch
+let pokemonFiles = [
+    'assets/images/pikachu.png',
+    'assets/images/jolteon.png',
+    'assets/images/luxray.png',
+    'assets/images/luxio.png',
+    'assets/images/shinx.png',
+    'assets/images/mareep.png',
+    'assets/images/plusle.png',
+    'assets/images/minun.png',
+    'assets/images/dedenne.png',
+    'assets/images/emolga.png',
+    'assets/images/morpeko.png',
+    'assets/images/pawmot.png',
+    'assets/images/yamper.png'
+]
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
@@ -40,4 +60,8 @@ function preload() {
 //Function that resizes my image no matter the size of the window
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+}
+
+function mousePressed() {
+
 }
