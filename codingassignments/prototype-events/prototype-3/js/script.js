@@ -88,6 +88,22 @@ function draw() {
 
 }
 
+function drawPokemon() {
+    //This picks which image to show
+    //Normal one --> if solved
+    //Hidden one --> shown otherwise if NOT solved
+
+    let img = blackedoutsnorlax;
+    if (solved) {
+        img = snorlax;
+    }
+
+    let h = height * 0.5;
+    let w = img.width * (h * img.height);
+    imageMode(CENTER);
+
+}
+
 function newGame() {
     //The choices start with the right answer
     choices = [answer];
