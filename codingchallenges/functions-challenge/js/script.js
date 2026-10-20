@@ -55,7 +55,14 @@ function draw() {
  * Moves the paddle
  */
 function movePaddle(paddle) {
-
+    //Self explanatory, left arrow key down, move left
+    if (keyIsDown(LEFT_ARROW) === true) {
+        paddle.x += -2; // Slightly faster than just having it move by 1
+    }
+    //Self explanatory, right arrow key down, move right
+    if (keyIsDown(RIGHT_ARROW) === true) {
+        paddle.x += 2;
+    }
 }
 
 /**

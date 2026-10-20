@@ -1,6 +1,9 @@
+---
+---
+
 # TITLE OF PROJECT
 
-AUTHOR NAME
+## A project by Erica Galvez, Sabrina Rath
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
