@@ -41,6 +41,9 @@ let squirtleCaught = false;
 //This is how close Ash has to be in order to catch one of the pokemons
 let catchDistance = 100;
 
+//Text at top of screen
+let message = "Use the arrow keys to walk. Press SPACE near a Pokemon!";
+
 function preload() {
     landscape = loadImage('assets/images/pallettown.png');
     ashImg = loadImage('assets/images/ash.png');
@@ -80,6 +83,14 @@ function draw() {
     }
 
     image(ashImg, ashX, ashY, 80, 110);
+
+    //Message at top (instructions)
+    fill("#000000");
+    stroke(0);
+    strokeWeight(4);
+    textSize(24);
+    textAlign(CENTER);
+    text(message, width / 2, 40);
 }
 
 function moveAsh() {
@@ -98,6 +109,14 @@ function moveAsh() {
 
 }
 
+function keyPressed() {
+    if (key === ' ') {
+        if (bulbasaurCaught === false && dist (ashX, ashY, bulbasaurX, bulbasaurY) < catchDistance) {
+            bulbasaurCaught = true;
+            message = "You caught Bulbasaur!";
+        }
+    }
+}
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
