@@ -11,7 +11,30 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+//Variable for background image
+let landscape;
+
+//Vairable for mystery pokemon
+let snorlax;
+let answer = "Snorlax";
+
+//Adding wrong names to mix in
+let decoys = [
+    'Slowbro',
+    'Munchlax',
+    'Jigglypuff',
+    'Gengar',
+    'Dragonite',
+    'Lapras',
+    'Pikachu'
+];
+
+function preload() {
+    landscape = loadImage('assets/images/whosthatpokemonbackground.jpg');
+}
 function setup() {
+    createCanvas(windowWidth, windowHeight);
+    imageMode(CORNER);
 
 }
 
@@ -20,5 +43,10 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    image (landscape, 0, 0, width, height);
 
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
