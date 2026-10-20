@@ -21,8 +21,8 @@ let landscape;
 let ashImg;
 
 //Ash's position + speed
-let ashX = 400;
-let ashY = 400;
+let ashX = 300;
+let ashY = 300;
 let ashSpeed = 5;
 
 //Variables for pokemon(s)
@@ -30,16 +30,16 @@ let bulbasaur;
 let charmander;
 let squirtle;
 
-let bulbasaurX = 200;
-let bulbasaurY = 200;
+let bulbasaurX = 1250;
+let bulbasaurY = 400;
 let bulbasaurCaught = false;
 
-let charmanderX = 200;
-let charmanderY = 200;
+let charmanderX = 450;
+let charmanderY = 100;
 let charmanderCaught = false;
 
-let squirtleX = 200;
-let squirtleY = 200;
+let squirtleX = 170;
+let squirtleY = 600;
 let squirtleCaught = false;
 
 //This is how close Ash has to be in order to catch one of the pokemons
@@ -53,7 +53,7 @@ function preload() {
     ashImg = loadImage('assets/images/ash.png');
     bulbasaur = loadImage('assets/images/bulbasaur.png');
     charmander = loadImage('assets/images/charmander.png');
-    squirtly = loadImage('assets/images/squirtle.png');
+    squirtle = loadImage('assets/images/squirtle.png');
 }
 
 function setup() {
@@ -89,11 +89,12 @@ function draw() {
     image(ashImg, ashX, ashY, 80, 110);
 
     //Message at top (instructions)
-    fill("#000000");
+    fill("#ffffff");
     stroke(0);
     strokeWeight(4);
     textSize(24);
     textAlign(CENTER);
+    textStyle(BOLD);  
     text(message, width / 2, 40);
 }
 
