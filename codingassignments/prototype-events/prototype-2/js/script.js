@@ -18,7 +18,7 @@
 let landscape;
 
 function preload() {
-    landscape = loadImage('assets/images/palettown.png');
+    landscape = loadImage('assets/images/pallettown.png');
 }
 
 function setup() {
