@@ -16,6 +16,7 @@ let backgroundImg;
 
 //Vairable for mystery pokemon
 let snorlax;
+let blackedoutsnorlax;
 let answer = "Snorlax";
 
 //Adding wrong names to mix in
@@ -28,12 +29,26 @@ let decoys = [
     'Lapras',
     'Pikachu'
 ];
+// 4 names shown on the buttons
+let choices = [];
 
-let choies = [];
+//Variables for true or false (solved or not)
 let wrong= [];
 let solved = false;
+
+//How many tries did it take?
 let attempts = 0;
+
+//Shows which button the mouse is hoevered over
 let hoveredSlot= -1;
+
+//Feedback text at top of the screen --> starts empty because the background image already asks "Who's that Pokemon?"
+let message = "";
+
+//Button sizes
+let buttonW = 170;
+let buttonH = 45;
+let buttonGap = 12;
 
 function preload() {
     backgroundImg = loadImage('assets/images/whosthatpokemonbackground.jpg');
@@ -41,6 +56,8 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     imageMode(CORNER);
+    //Sets up first round when sketch loads
+    newGame();
 
 }
 
