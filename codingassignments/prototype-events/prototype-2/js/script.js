@@ -30,6 +30,14 @@ let bulbasaur;
 let charmander;
 let squirtly;
 
+let charmanderX = 200;
+let charmanderY = 200;
+let charmanderCaught = false;
+
+let squirtleX = 200;
+let squirtleY = 200;
+let squirtleCaught = false;
+
 function preload() {
     landscape = loadImage('assets/images/pallettown.png');
 }
