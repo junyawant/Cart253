@@ -25,4 +25,4 @@ This bit should attribute any code, assets or other elements used taken from oth
 
 > - This project uses [p5.js](https://p5js.org).
 > - All Pokemons uses images from the [following website](https://pokemondb.net/type/electric).
-> - Background image is from [here](https://www.deviantart.com/willdinochampion55/art/Route-Background-41-1399491109).
+> - The background can be found[here](https://www.deviantart.com/willdinochampion55/art/Route-Background-41-1399491109).

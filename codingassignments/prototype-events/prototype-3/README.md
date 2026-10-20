@@ -1,23 +1,24 @@
-# TITLE OF PROJECT
+---
+---
 
-AUTHOR NAME
+# Who's That Pokemon?
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+## Erica Galvez
+
+- [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-events/prototype-3/)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-events/prototype-3/js/script.js)
+
+![whosthatpokemon](./assets/images/whosthatpokemon.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This prototype is inspired by the famous pokemon scenes (mostly made into memes these days) of a blacked out pokemon waiting to be revealed. In this case, you are given many different options to choose from before getting the right answer! 
+
+## How It Works
+- Using your LMB, hover over the button in order to guess the right name of the Pokemon!
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+> - The background image can be found [here](https://www.deviantart.com/amitlu89/art/Who%27s-that-Pokemon-254910939)
+> - The snorlax image can be found [here](https://www.pokemon.com/us/pokedex/snorlax)
