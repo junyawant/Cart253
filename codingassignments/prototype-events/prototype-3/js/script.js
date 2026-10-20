@@ -55,18 +55,31 @@ function preload() {
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    imageMode(CORNER);
     //Sets up first round when sketch loads
     newGame();
 
 }
 
-
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    imageMode(CORNER);
     image (landscape, 0, 0, width, height);
+
+    //Feedback text
+    fill("#FFFFFF");
+    stroke(0);
+    strokeWeight(6);
+    textAlign(CENTER, CENTER);
+    textSize(36);
+    text(message, width / 2, height * 0.08);
+
+    //Guess Counter
+    if (solved) {
+        textSize(10);
+        text("Press R or click anywhere to play again", width / 2, height * 0.97);
+    }
 
 }
 
