@@ -30,9 +30,14 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 - [Prototype 2](codingassignments/prototype-conditionals/prototype-2/README.md)
 - [Prototype 3](codingassignments/prototype-conditionals/prototype-3/README.md)
 
+#### Events
+- [Prototype 1](codingassignments/prototype-events/prototype-1/README.md)
+
 ### Challenges
 - [Instructions Challenge](codingchallenges/instructions-challenge/README.md)
 - [Variables Challenge](codingchallenges/variables-challenge/mr-furious/README.md)
 - [Conditionals Challenge](codingchallenges/conditionals-challenge/README.md)
 - [Events Challenge](codingchallenges/events-challenge/README.md)
+
+
 

@@ -3,7 +3,7 @@
 ## Erica Galvez
 
 - [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-events/prototype-1/)
-- [View the code for this project here]()
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-events/prototype-1/js/script.js)
 
 ![pokemonfullart](./assets/images/pokemonfullart.png)
 
