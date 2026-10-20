@@ -36,6 +36,16 @@ let pokemonFiles = [
     'assets/images/yamper.png'
 ]
 
+//An array of the cards that have been placed already by clicking
+let placeCards = [];
+
+//Decides which pokemon loads in next (going through the array (hopefully in order?)
+let nextIndex = 0;
+
+//pokemon sizes
+const CARD_w = 220;
+const CARD_H = 300;
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
