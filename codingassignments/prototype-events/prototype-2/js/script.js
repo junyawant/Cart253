@@ -30,6 +30,10 @@ let bulbasaur;
 let charmander;
 let squirtly;
 
+let bulbasaurX = 200;
+let bulbasaurY = 200;
+let bulbasaurCaught = false;
+
 let charmanderX = 200;
 let charmanderY = 200;
 let charmanderCaught = false;
