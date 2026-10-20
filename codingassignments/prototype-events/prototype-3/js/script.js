@@ -65,7 +65,7 @@ function setup() {
 */
 function draw() {
     imageMode(CORNER);
-    image (landscape, 0, 0, width, height);
+    image (backgroundImg, 0, 0, width, height);
 
     //Feedback text
     fill("#FFFFFF");
@@ -78,12 +78,12 @@ function draw() {
     //Guess Counter
     textSize(22);
     strokeWeight(4);
-    text("Guesses: " * attempts, width * 0.9, height * 0.05);
+    text("Guesses: " + attempts, width * 0.9, height * 0.05);
 
     //Text After solving
     if (solved) {
         textSize(10);
-        text("Press R or click anywhere to play again", width / 2, height * 0.97);
+        text("Click anywhere to play again", width / 2, height * 0.97);
     }
 
 }
@@ -99,17 +99,72 @@ function drawPokemon() {
     }
 
     let h = height * 0.5;
-    let w = img.width * (h * img.height);
+    let w = img.width * (h / img.height);
+
     imageMode(CENTER);
+    image(img, width * 0.27, height * 0.4, w, h);
 
 }
+
+function drawButtons() {
+    for (let i = 0; i < 4; i++) {
+        let b = getButton(i);
+
+        //Decides button color
+        if (solved && choices[i] === answer) {
+            fill("#48a36e");
+        }
+        else if (wrong[i]) {
+            fill("#a12d2d");
+        }
+        else if (solved === false && hoveredSlot === 1) {
+            fill("#cac8c8");
+        }
+        else {
+            fill("#FFFFFF");
+        }
+
+        stroke(0);
+        strokeWeight(3);
+        rect(b.x, b.y, b.w, b.h, 12);
+
+        //Button text
+        noStroke();
+        fill("#000000");
+        textSize(24);
+        textAlign(CENTER, CENTER);
+        text(choices[i], b.x + b.w / 2, b.y + b.h / 2);
+    }
+}
+
+function getButton(i) {
+    let column = i % 2; 
+    let row = floor(i /2);
+    let gridWidth = 2 * buttonW + buttonGap;
+    let startX = width * 0.27 - gridWidth / 2;
+    let startY = height * 0.70;
+
+    return {
+        x: startX + column * (buttonW + buttonGap),
+        y: startY + row * (buttonH + buttonGap),
+        w: buttonW,
+        h: buttonH
+    };
+}
+
+function isOverButton(i) {
+    let b = getButton(i);
+    return mouseX > b.x && mouseX < b.x + b.w && mouseY < b.y + b.h;
+}
+
+
 
 function newGame() {
     //The choices start with the right answer
     choices = [answer];
 
     //THEN adds 3 random wrong ones
-    let shuffleDecoys = shuffle(decoys);
+    let shuffledDecoys = shuffle(decoys);
     for (let i = 0; i < 3; i ++) {
         choices.push(shuffledDecoys[i]);
     }
@@ -128,10 +183,6 @@ function mousePressed() {
         newGame();
         return;
     }
-}
-
-function keyPressed() {
-
 }
 
 function windowResized() {
