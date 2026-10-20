@@ -18,9 +18,9 @@
 let landscape;
 
 //Variable for pokemon trainer
-let ash;
+let ashImg;
 
-//Ash's position + Speed
+//Ash's position + speed
 let ashX = 400;
 let ashY = 400;
 let ashSpeed = 5;
@@ -38,8 +38,15 @@ let squirtleX = 200;
 let squirtleY = 200;
 let squirtleCaught = false;
 
+//This is how close Ash has to be in order to catch one of the pokemons
+let catchDistance = 100;
+
 function preload() {
     landscape = loadImage('assets/images/pallettown.png');
+    ashImg = loadImage('assets/images/ash.png');
+    bulbasaur = loadImage('assets/images/bulbasaur.png');
+    charmander = loadImage('assets/images/charmander.png');
+    squirtly = loadImage('assets/images/squirtle.png');
 }
 
 function setup() {
