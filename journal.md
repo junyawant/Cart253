@@ -40,3 +40,12 @@ For these prototypes, I tried not to think too much about the aesthetics of my p
 A cool and interesting thing I would love to begin adding more to my projects is definitely sound. While I've played alot with it in previous projects as I have a incredibly profound interest and passion in music, I would love to build on it more as it makes each piece feel even more immersive. 
 
 I would equally want to try and attempt making my projects full screen to be able to fully submerge in my works and make users feel attracted to wanting to try it out, similar to how people tend to want to play cool/interesting video games and/or art that look unique when seen from afar! I want users to approach my projects with that kind of enthusiasm and hope to be able to implement that in my projects soon.
+
+## October 20, 2026
+
+Write a journal entry in your process journal reflecting on what you learned while making your prototypes. What surprised you? What is cool? What is difficult to understand? What do you hope someone else would get out of your work? Is there anything here you would be interested to develop further? Include at least one screenshot to illustrate your thoughts. (Minimum 250 words)
+
+This assignment was extremely time consuming, yet fun. Using events in my projects open such large possibilities for creativity and interactivity for users to play with! What surprised me the most is the amount of variables that need to be made in order to get a code running smoothly, and most importantly, in the most organized way possible. I've equally come to realize that I had never thought about how much alot of code is depend on IF statements, as they can be useful in various different ways, especially in games. 
+
+The one thing that I liked a lot about this assignment was that it was not difficult to come up with ideas. Using the main theme of pokemon as my central focus to implement into my works, I felt as thought thinking about what I could do was a lot easier and more "free" in terms of what kind of project could, at once, reflect the material we learned that week, but equally giving me the creative freedom to do as I please (obviously as long as it was relative to the instructions provided by the instructor).
+
