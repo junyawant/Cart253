@@ -88,6 +88,36 @@ function draw() {
 
 }
 
+function newGame() {
+    //The choices start with the right answer
+    choices = [answer];
+
+    //THEN adds 3 random wrong ones
+    let shuffleDecoys = shuffle(decoys);
+    for (let i = 0; i < 3; i ++) {
+        choices.push(shuffledDecoys[i]);
+    }
+
+    //Shuffle so the right answer isnt always in the same spot
+    choices = shuffle(choices);
+
+    wrong = [false, false, false, false];
+    solved = false;
+    attempts = 0;
+    message = "";
+}
+
+function mousePressed() {
+    if (solved) {
+        newGame();
+        return;
+    }
+}
+
+function keyPressed() {
+
+}
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
