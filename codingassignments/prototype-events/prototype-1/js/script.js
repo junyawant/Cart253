@@ -21,19 +21,19 @@ let pokemonImages = [];
 
 //Calling on my images so that they EXIST in my sketch
 let pokemonFiles = [
-    'assets/images/pikachu.png',
-    'assets/images/jolteon.png',
     'assets/images/luxray.png',
     'assets/images/luxio.png',
     'assets/images/shinx.png',
-    'assets/images/mareep.png',
-    'assets/images/plusle.png',
-    'assets/images/minun.png',
+    'assets/images/morpeko.png',
+    'assets/images/pikachu.png',
     'assets/images/dedenne.png',
     'assets/images/emolga.png',
-    'assets/images/morpeko.png',
+    'assets/images/yamper.png',
+    'assets/images/plusle.png',
+    'assets/images/minun.png',
+    'assets/images/jolteon.png',
     'assets/images/pawmot.png',
-    'assets/images/yamper.png'
+    'assets/images/mareep.png'
 ]
 
 //An array of the cards that have been placed already by clicking
@@ -89,7 +89,7 @@ function drawPokemon(card) {
 
 function mousePressed() {
     let newCard = {
-        img: pokemonImages[nextIndenx],
+        img: pokemonImages[nextIndex],
         x: mouseX,
         y: mouseY
     };
