@@ -26,10 +26,14 @@ function setup() {
 function draw() {
     background(220);
 
-    image (route2background.jpg, 0, 0);
+    image (landscape, 0, 0, width, height);
     
 }
 
 function preload() {
     landscape = loadImage('assets/images/route2background.jpg');
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
