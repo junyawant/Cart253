@@ -9,34 +9,32 @@ Welcome to my CART 253 website. This is Erica Galvez's coursework space for the 
 - [Reflective Journal](journal.md)
 - [My Github](https://github.com/junyawant)
 
-## Projects
+## Projects + Prototypes
 
 This section is dedicated to my prototypes and projects for CART 253 that will be added here throughout the semester.
 
-### Prototypes
-
-#### Instructions
+### Instructions
 - [Prototype 1](codingassignments/prototype-instructions/prototype-1/domo-monster/README.md)
 - [Prototype 2](codingassignments/prototype-instructions/prototype-2/prototype2/README.md)
 - [Prototype 3](codingassignments/prototype-instructions/prototype-3/abstract-art/README.md)
 
-#### Variables
+### Variables
 - [Prototype 1](codingassignments/prototype-variables/prototype-1/README.md)
 - [Prototype 2](codingassignments/prototype-variables/prototype-2/README.md)
 - [Prototype 3](codingassignments/prototype-variables/prototype-3/README.md)
 
-#### Conditionals
+### Conditionals
 - [Prototype 1](codingassignments/prototype-conditionals/prototype-1/README.md)
 - [Prototype 2](codingassignments/prototype-conditionals/prototype-2/README.md)
 - [Prototype 3](codingassignments/prototype-conditionals/prototype-3/README.md)
 
-#### Events
-## [Prototype 1](codingassignments/prototype-events/prototype-1/README.md)
+### Events
+#### [Prototype 1](codingassignments/prototype-events/prototype-1/README.md)
 ![Screenshot of Prototype 1](./codingassignments/prototype-events/prototype-1/assets/images/pokemonfullart.png)
 1. [View this project online](https://junyawant.github.io/Cart253/codingassignments/prototype-events/prototype-1/)
 2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-events/prototype-1/js/script.js)
 
-### Challenges
+## Challenges
 - [Instructions Challenge](codingchallenges/instructions-challenge/README.md)
 - [Variables Challenge](codingchallenges/variables-challenge/mr-furious/README.md)
 - [Conditionals Challenge](codingchallenges/conditionals-challenge/README.md)
