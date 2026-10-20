@@ -17,6 +17,19 @@
 //Variable for background 
 let landscape;
 
+//Variable for pokemon trainer
+let ash;
+
+//Ash's position + Speed
+let ashX = 400;
+let ashY = 400;
+let ashSpeed = 5;
+
+//Variables for pokemon(s)
+let bulbasaur;
+let charmander;
+let squirtly;
+
 function preload() {
     landscape = loadImage('assets/images/pallettown.png');
 }
