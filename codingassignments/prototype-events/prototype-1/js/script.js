@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Electricity!
+ * Erica Galvez
  * 
  * My vision for this project is to make an array of images using Pokemon characters. My plan is for that on each click, a pokemon appears (different pokemon per click) in order to imitate those pokemon full art cards!
  * 
