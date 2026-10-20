@@ -12,7 +12,7 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 //Variable for background image
-let landscape;
+let backgroundImg;
 
 //Vairable for mystery pokemon
 let snorlax;
@@ -29,8 +29,14 @@ let decoys = [
     'Pikachu'
 ];
 
+let choies = [];
+let wrong= [];
+let solved = false;
+let attempts = 0;
+let hoveredSlot= -1;
+
 function preload() {
-    landscape = loadImage('assets/images/whosthatpokemonbackground.jpg');
+    backgroundImg = loadImage('assets/images/whosthatpokemonbackground.jpg');
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
