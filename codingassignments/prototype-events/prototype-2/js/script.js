@@ -43,8 +43,8 @@ let squirtleY = 600;
 let squirtleCaught = false;
 
 //Variable for image sizes
-let pokemonSize = 80;
-let ashScale = 0.6;
+let pokemonSize = 70;
+let ashScale = 0.25;
 
 //This is how close Ash has to be in order to catch one of the pokemons
 let catchDistance = 100;
