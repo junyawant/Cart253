@@ -11,7 +11,19 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+//Variables
+
+//Variable for background 
+let landscape;
+
+function preload() {
+    landscape = loadImage('assets/images/palettown.png');
+}
+
 function setup() {
+    createCanvas(windowWidth, windowHeight);
+    imageMode(CORNER);
 
 }
 
@@ -20,5 +32,9 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    image (landscape, 0, 0, width, height);
+}
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
