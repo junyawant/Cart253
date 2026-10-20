@@ -43,9 +43,10 @@ let placeCards = [];
 let nextIndex = 0;
 
 //pokemon sizes
-const CARD_w = 220;
-const CARD_H = 300;
+const POKEMON_H = 300;
 
+
+//Creates the canvas to be relative to the (browser) windows properties (height and width)
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
@@ -57,9 +58,13 @@ function setup() {
 */
 function draw() {
     background(220);
-
     image (landscape, 0, 0, width, height);
-    
+
+}
+
+function drawCard(card) {
+    push();
+    imageMode
 }
 
 //Loads my image
