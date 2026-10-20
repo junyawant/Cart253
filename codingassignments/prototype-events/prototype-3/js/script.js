@@ -52,6 +52,8 @@ let buttonGap = 12;
 
 function preload() {
     backgroundImg = loadImage('assets/images/whosthatpokemonbackground.jpg');
+    snorlax = loadImage('assets/images/snorlax.png')
+    blackedoutsnorlax = loadImage('assets/images/blackedoutsnorlax.png')
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -66,6 +68,9 @@ function setup() {
 function draw() {
     imageMode(CORNER);
     image (backgroundImg, 0, 0, width, height);
+
+    drawPokemon();
+    drawButtons();
 
     //Feedback text
     fill("#FFFFFF");
@@ -82,7 +87,7 @@ function draw() {
 
     //Text After solving
     if (solved) {
-        textSize(10);
+        textSize(18);
         text("Click anywhere to play again", width / 2, height * 0.97);
     }
 
@@ -117,7 +122,7 @@ function drawButtons() {
         else if (wrong[i]) {
             fill("#a12d2d");
         }
-        else if (solved === false && hoveredSlot === 1) {
+        else if (solved === false && hoveredSlot === i) {
             fill("#cac8c8");
         }
         else {
@@ -154,7 +159,7 @@ function getButton(i) {
 
 function isOverButton(i) {
     let b = getButton(i);
-    return mouseX > b.x && mouseX < b.x + b.w && mouseY < b.y + b.h;
+    return mouseX > b.x && mouseX < b.x + b.w && mouseY > b.y && mouseY < b.y + b.h;
 }
 
 
@@ -183,10 +188,10 @@ function makeGuess(slot) {
         return;
     }
 
-    atempts = attempts + 1;
+    attempts = attempts + 1;
     if (choices[slot] === answer) {
         solved = true;
-        message = "Correct It's " + answer + "!";
+        message = "Correct! It's " + answer + "!";
     }
     else {
         wrong[slot] = true;
@@ -199,7 +204,7 @@ function mouseMoved() {
 
     for (let i = 0; i < 4; i++) {
         if (isOverButton(i)) {
-            hoveredSlot = 1;
+            hoveredSlot = i;
         }
     }
 }
