@@ -79,18 +79,18 @@ function draw() {
 
     //Only draw the pokemon that HAVE NOT gotten caught yet
     if (bulbasaurCaught === false) {
-        image(bulbasaur, bulbasaurX, bulbasaurY, 120, 120);
+        image(bulbasaur, bulbasaurX, bulbasaurY, pokemonSize, pokemonSize);
     }
 
     if (charmanderCaught === false) {
-        image(charmander, charmanderX, charmanderY, 120, 120);
+        image(charmander, charmanderX, charmanderY, pokemonSize, pokemonSize);
     }
 
     if (squirtleCaught === false) {
-        image(squirtle, squirtleX, squirtleY, 120, 120);
+        image(squirtle, squirtleX, squirtleY, pokemonSize, pokemonSize);
     }
 
-    image(ashImg, ashX, ashY, 80, 110);
+    image(ashImg, ashX, ashY, ashImg.width * ashScale, ashImg.height * ashScale);
 
     //Message at top (instructions)
     fill("#ffffff");
