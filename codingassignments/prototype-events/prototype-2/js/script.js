@@ -20,7 +20,7 @@ let landscape;
 //Variable for pokemon trainer
 let ashImg;
 
-//Ash's position + speed
+//Variables for Ash's position + speed
 let ashX = 300;
 let ashY = 300;
 let ashSpeed = 5;
@@ -41,6 +41,10 @@ let charmanderCaught = false;
 let squirtleX = 170;
 let squirtleY = 600;
 let squirtleCaught = false;
+
+//Variable for image sizes
+let pokemonSize = 80;
+let ashScale = 0.6;
 
 //This is how close Ash has to be in order to catch one of the pokemons
 let catchDistance = 100;
