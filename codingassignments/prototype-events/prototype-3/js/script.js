@@ -1,16 +1,12 @@
 /**
- * Title of Project
- * Author Name
+ * Who's That Pokemon?
+ * Erica
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * This prototype is inspired by the famous pokemon scenes (mostly made into memes these days) of a blacked out pokemon waiting to be revealed. In this case, you are given many different options to choose from before getting the right answer! How it works: Using your LMB, hover over the button in order to guess the right name of the Pokemon!
  */
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
 //Variable for background image
 let backgroundImg;
 
@@ -50,11 +46,16 @@ let buttonW = 170;
 let buttonH = 45;
 let buttonGap = 12;
 
+//Loads in my images
 function preload() {
     backgroundImg = loadImage('assets/images/whosthatpokemonbackground.jpg');
     snorlax = loadImage('assets/images/snorlax.png')
     blackedoutsnorlax = loadImage('assets/images/blackedoutsnorlax.png')
 }
+
+/**
+ * Setup creates the canvas and reloads a new game everytime the browser is refreshed or the game is replayed!
+*/
 function setup() {
     createCanvas(windowWidth, windowHeight);
     //Sets up first round when sketch loads
@@ -63,12 +64,13 @@ function setup() {
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * My draw illustrates most of the text seen in the project! As well as calling on functions I have made outside of DRAW
 */
 function draw() {
     imageMode(CORNER);
     image (backgroundImg, 0, 0, width, height);
 
+    //Calling on my other functions
     drawPokemon();
     drawButtons();
 
@@ -103,6 +105,7 @@ function drawPokemon() {
         img = snorlax;
     }
 
+    //Size is based on the window height
     let h = height * 0.5;
     let w = img.width * (h / img.height);
 
@@ -111,6 +114,7 @@ function drawPokemon() {
 
 }
 
+//Draws four options buttons
 function drawButtons() {
     for (let i = 0; i < 4; i++) {
         let b = getButton(i);
@@ -142,6 +146,7 @@ function drawButtons() {
     }
 }
 
+//Gives position + size of button 
 function getButton(i) {
     let column = i % 2; 
     let row = floor(i /2);
@@ -157,13 +162,13 @@ function getButton(i) {
     };
 }
 
+//This check whether the mosue is over the button 
 function isOverButton(i) {
     let b = getButton(i);
     return mouseX > b.x && mouseX < b.x + b.w && mouseY > b.y && mouseY < b.y + b.h;
 }
 
-
-
+//Start (or restarts) the game with a different set of choices
 function newGame() {
     //The choices start with the right answer
     choices = [answer];
@@ -183,6 +188,7 @@ function newGame() {
     message = "";
 }
 
+//This checks the guess for button number slot
 function makeGuess(slot) {
     if (solved || wrong[slot]) {
         return;
@@ -199,6 +205,7 @@ function makeGuess(slot) {
     }
 }
 
+//This figures out which (if there are any) the mouse is hovered over
 function mouseMoved() {
     hoveredSlot = -1;
 
@@ -209,6 +216,9 @@ function mouseMoved() {
     }
 }
 
+//This function checks if the mouse is clicked
+//If the right name is solved --> Star over
+//If not --> checks buttons
 function mousePressed() {
     if (solved) {
         newGame();
@@ -222,6 +232,7 @@ function mousePressed() {
     }
 }
 
+//Resizes elements of my project based off window width and height
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
