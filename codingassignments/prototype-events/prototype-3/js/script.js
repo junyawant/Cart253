@@ -178,10 +178,42 @@ function newGame() {
     message = "";
 }
 
+function makeGuess(slot) {
+    if (solved || wrong[slot]) {
+        return;
+    }
+
+    atempts = attempts + 1;
+    if (choices[slot] === answer) {
+        solved = true;
+        message = "Correct It's " + answer + "!";
+    }
+    else {
+        wrong[slot] = true;
+        message= "Nope, try again!";
+    }
+}
+
+function mouseMoved() {
+    hoveredSlot = -1;
+
+    for (let i = 0; i < 4; i++) {
+        if (isOverButton(i)) {
+            hoveredSlot = 1;
+        }
+    }
+}
+
 function mousePressed() {
     if (solved) {
         newGame();
         return;
+    }
+
+    for (let i = 0; i < 4; i++) {
+        if (isOverButton(i)) {
+            makeGuess(i);
+        }
     }
 }
 
