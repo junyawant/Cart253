@@ -11,8 +11,11 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+let landscape;
+
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(windowWidth, windowHeight);
 
 }
 
@@ -21,7 +24,12 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background("#000000");
-    
+    background(220);
 
+    image (route2background.jpg, 0, 0);
+    
+}
+
+function preload() {
+    landscape = loadImage('assets/images/route2background.jpg');
 }
