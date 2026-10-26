@@ -11,6 +11,16 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+//Variables
+
+//For Fonts
+let myFont;
+
+function preload() {
+    myFont = loadFont('assets/Press_Start_2P/PressStart2P-Regular.tff');
+}
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
@@ -22,5 +32,12 @@ function setup() {
 */
 function draw() {
     background("#254E70");
+
+    //Writing fonts
+    textFont(myFont);
+    textSize(32);
+    textAlign(CENTER, CENTER);
+    fill(0);
+    text("Hello World!", width/2, height/2);
 
 }
