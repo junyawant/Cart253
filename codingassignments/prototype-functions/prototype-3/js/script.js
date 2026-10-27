@@ -17,15 +17,19 @@ let numbers = []; //the 3 random random numbers
 */
 function setup() {
     createCanvas(400, 600);
-
+    numbers = generateNumbers();
+    noLoop(); // basically --> only redraw when the user clicks using the mouse
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
     background("#FFFFFF");
+
+    for (let i = 0; i < numbers.length; i++) {
+        drawNumber(numbers[i], 100 + i * 200);
+    }
 
 }
 
@@ -43,8 +47,9 @@ function generateNumbers() {
 
     while (result.length < 3) {
         let n = floor(random(2, 13)) //numbers 2 up to 12
-        if (!result.includes(m)) { //only add it if its new
+        if (!result.includes(n)) { //only add it if its new
             result.push(n);
         }
     } 
+    return result;
 }
