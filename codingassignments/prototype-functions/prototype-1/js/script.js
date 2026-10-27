@@ -82,7 +82,11 @@ function draw() {
     translate(offsetX, offsetY);
     scale(zoom);
     
-    drawTitleScreen();
+    if (mode === "title") {
+        drawTitleScreen();
+    } else {
+        drawTimerScreen();
+    }
 
     pop();
     
