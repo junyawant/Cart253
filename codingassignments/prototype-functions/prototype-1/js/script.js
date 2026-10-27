@@ -89,8 +89,16 @@ function draw() {
     }
 
     pop();
-    
+}
 
+function windowResized() {
+    resizeCanvas(windowWidth,windowHeight);
+}
+
+function updateLayout() {
+    zoom = min(width/pageW, height/pageH);
+    offsetX = (width - pageW * zoom) /2;
+    offsetY = (height - pageH * zoom) /2;
 }
 
 function drawTitleScreen() {
