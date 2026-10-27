@@ -13,7 +13,7 @@
 let numbers = []; //the 3 random random numbers
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas and picks the first 3 numbers
 */
 function setup() {
     createCanvas(400, 600);
@@ -22,7 +22,7 @@ function setup() {
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the 4 numbers one after the other (under each other i guess you could say)
 */
 function draw() {
     background("#FFFFFF");
@@ -38,6 +38,7 @@ function drawNumber(num, y) {
     fill("#000000");
     noStroke();
     textAlign(CENTER, CENTER);
+    textStyle(BOLD);
     textSize(120);
     text(num, width/2, y);
 }
@@ -52,4 +53,10 @@ function generateNumbers() {
         }
     } 
     return result;
+}
+
+//This functions makes it so that u can click anywhere on the canvas to get 3 new numbers
+function mousePressed() {
+    numbers = generateNumbers();
+    redraw();
 }
