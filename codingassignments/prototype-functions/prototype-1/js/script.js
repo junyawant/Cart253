@@ -132,7 +132,13 @@ function drawTimerScreen() {
     text(formatTime(timeLeft), 240, 340);
 
     //Progression bar at the bottom as the time passes
-    let progress = 1 - timeLeft/duration; (0 -> 1)
+    let progress = 1 - timeLeft/duration; //(0 -> 1)
+    strokeWeight(14);
+    stroke(255,90);
+    line(60, 470, 420, 470); //empty bar
+    stroke(255);
+    line(60, 470, 60 + 360 * progress, 470); //filled part of the bar
+    noStroke(); 
 
 }
 
