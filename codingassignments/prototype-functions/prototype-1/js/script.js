@@ -84,3 +84,22 @@ function draw() {
     
 
 }
+
+function drawTitleScreen() {
+    //drawing the 4 symbols in a grid (2x2)
+    for (let i = 0; i < symbols.length; i++) {
+        let x = 165 + (i % 2) * 150;
+        let y = 230 + floor(i/2) * 115;
+        drawSymbol (symbols[i], x, y);
+    }
+
+    fill(255);
+    textFont(myFont);
+    textSize(32);
+    text("MATH O' CLOCK", 240, 90);
+
+    textFont("sans-serif");
+    textSize(15);
+    text("Study smart with this math timer!", 240, 140);
+
+}
