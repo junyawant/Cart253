@@ -47,7 +47,7 @@ let btnY = 500;
 let btnW = 230;
 let btnH = 60;
 
-
+//Adding it before setup to load the font before the sketch even starts
 function preload() {
     myFont = loadFont(FONT_PATH);
 }
@@ -56,6 +56,19 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     textAlign(CENTER, CENTER);
 
+    taskInput = createInput("");
+    taskInput.attribute("placeholder", "What are you working on?");
+
+    minutesInput = createInput("25", "number");
+
+    secondsInputInput = createInput("25", "number");
+    
+    //puting the boxes in an array
+    inputs = [taskInput, minutesInput, secondsInput];
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].style("text-align", "center");
+    }
+
 }
 
 
@@ -63,5 +76,11 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background(BG_COLOR);
+
+    push();
+    translate(offsetX, offsetY);
+    scale(zoom);
+    
 
 }
