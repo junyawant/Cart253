@@ -105,8 +105,8 @@ function updateLayout() {
     offsetY = (height - pageH * zoom) /2;
 
     placeInput(taskInput, 90, 420, 300);
-    placeInput(minutesInput, 140, 515, 100);
-    placeInput(secondsInput, 260, 515, 100);
+    placeInput(minutesInput, 130, 515, 100);
+    placeInput(secondsInput, 250, 515, 100);
 }
 
 //Puts an input box at X AND Y (minutes + seconds)
@@ -121,7 +121,7 @@ function mouseOnButton() {
     let pageMouseX = (mouseX - offsetX) / zoom;
     let pageMouseY = (mouseY -  offsetY) / zoom;
 
-    return pageMouseX < btnX && pageMouseX < btnX + btnW && pageMouseY > btnY && pageMouseY < btnY + btnH;
+    return pageMouseX > btnX && pageMouseX < btnX + btnW && pageMouseY > btnY && pageMouseY < btnY + btnH;
 }
 
 function drawTitleScreen() {
@@ -137,9 +137,13 @@ function drawTitleScreen() {
     textSize(32);
     text("MATH O' CLOCK", 240, 90);
 
-    textFont("sans-serif");
+    textFont(myFont);
     textSize(15);
-    text("Study smart with this math timer!", 240, 140);
+    text("Study smarter with this math timer!", 240, 140);
+    text("Minutes", 190, 498);
+    text("Seconds", 310, 498);
+
+    drawButton("START");
 
 }
 
@@ -258,7 +262,7 @@ function mousePressed() {
         taskText = taskInput.value();
         let mins = int (minutesInput.value());
         let secs = int (secondsInput.value());
-    }
+    
 
    if(isNaN(mins)) {
     mins = 0;
@@ -270,4 +274,9 @@ function mousePressed() {
    duration = (mins * 60 + secs) * 1000;
    startTime = millis();
    mode = "work";
+   setInputsVisible(false);
+} else if (mouseOnButton() && mode === "work" && getTimeLeft() === 0) {
+    mode = "title";
+    setInputsVisible(true);
+}
 }
