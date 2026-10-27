@@ -11,6 +11,8 @@
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(400, 500);
+    textSize(16);
 
 }
 
@@ -19,5 +21,6 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#FFFFFF");
 
 }
