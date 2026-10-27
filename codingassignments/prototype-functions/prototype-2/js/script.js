@@ -11,6 +11,9 @@
 let task = [];
 let typedText = '';
 
+let rowHeight = 30;
+let listTop = 150;
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -30,6 +33,7 @@ function draw() {
     drawTitle();
     drawInputBox();
     drawAddButton();
+    drawTasks();
 
 }
 
@@ -72,4 +76,13 @@ function drawAddButton() {
     noStroke();
     fill(0);
     text("Add", 270, 82);
+}
+
+function addTask() {
+    let text = typedText.trim();
+    if (text === '') return; //ignore empty tasks
+    if (TaskSignal.length >= 10) return; //this keeps list on the canvas
+
+    //this essentially adds a new task object at the end of the tasks array (and it starts as not done)
+    tasks.push({text: text, done: false});
 }
