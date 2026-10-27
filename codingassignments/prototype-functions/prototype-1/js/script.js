@@ -108,6 +108,34 @@ function drawTitleScreen() {
 
 }
 
+function drawTimerScreen() {
+    let timeLeft = getTimeLeft();
+
+    //Text displays near the top
+    fill("#FFFFFF");
+    textFont(myFont);
+    textSize(28);
+    if (timeLeft === 0) {
+        text("TIME'S UP!", 240, 100);
+    } else {
+        text("LET'S GO, YOU GOT THIS!", 240, 100);
+    }
+
+    //Text for the task inserted (Input + Buttons)
+    textFont("sans-serif");
+    textSize(17);
+    text(taskText, 40, 150, 400, 90);
+
+    //Text for the time displayed
+    textFont(myFont);
+    textSize(78);
+    text(formatTime(timeLeft), 240, 340);
+
+    //Progression bar at the bottom as the time passes
+    let progress = 1 - timeLeft/duration; (0 -> 1)
+
+}
+
 //This function returns the milliseconds that may be left (BUT IS NEVER LESS THAN 0) --> so that we dont hit any negative numbers
 function getTimeLeft() {
     let timeLeft = duration - (millis() - startTime);
