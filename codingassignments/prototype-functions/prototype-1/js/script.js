@@ -82,6 +82,8 @@ function draw() {
     translate(offsetX, offsetY);
     scale(zoom);
     
+    
+    
 
 }
 
@@ -93,7 +95,7 @@ function drawTitleScreen() {
         drawSymbol (symbols[i], x, y);
     }
 
-    fill(255);
+    fill("#FFFFFF");
     textFont(myFont);
     textSize(32);
     text("MATH O' CLOCK", 240, 90);
@@ -102,4 +104,27 @@ function drawTitleScreen() {
     textSize(15);
     text("Study smart with this math timer!", 240, 140);
 
+}
+
+function drawSymbol (symbol, x, y) {
+    stroke("#FFFFFF");
+    strokeWeight(14);
+
+    if(symbol === "+") {
+        line(x - 40, y, x + 40, y);
+        line(x, y - 40, x, y + 40);
+    } else if (symbol === "-") {
+        line (x - 40, y, x + 40);
+    } else if (symbol === "x") {
+        line (x - 40, y - 40, x + 40, y + 40);
+        line (x - 40, y + 40, x + 40, y - 40);
+    } else if (symbol === "/") {
+        line(x - 40, y, x + 40, y);
+        noStroke();
+        fill("#FFFFFF");
+        ellipse(x, y - 32, 20);
+        ellipse(x, y - 32, 20);
+    }
+
+    noStroke();
 }
