@@ -1,12 +1,16 @@
 /**
- * Title of Project
- * Author Name
+ * Skip Counts
+ * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * My vision for this project is another useful tool that would make my life easier while tutoring! 
+ * Every thursday afternoon, right before the timed multiplications (prototype 1), we do skip counts! 
+ * 3 random numbers that my students have to multiply (10 products of each number)
  */
 
 "use strict";
+
+//Variables
+let numbers = []; //the 3 random random numbers
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
