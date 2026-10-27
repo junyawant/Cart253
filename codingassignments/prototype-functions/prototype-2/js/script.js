@@ -119,3 +119,19 @@ function addTask() {
     tasks.push({text: text, done: false});
     typedText = '';
 }
+
+function keyPressed() {
+    if(keyCode === ENTER) {
+        addTask();
+    } else if (keyCode === BACKSPACE) {
+        typedText = typedText.slice(0, -1);
+        return false;
+    }
+}
+
+function keyTyped() {
+    if (key.length === 1 && typedText.length < 25) {
+        typedText += key;
+    }
+    return false;
+}
