@@ -28,6 +28,7 @@ function draw() {
     background("#FFFFFF");
 
     drawTitle();
+    drawInputBox();
 
 }
 
