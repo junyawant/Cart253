@@ -8,7 +8,7 @@
 "use strict";
 
 //Variables
-let task = [];
+let tasks = [];
 let typedText = '';
 
 let rowHeight = 30;
@@ -113,7 +113,7 @@ function drawTasks() {
 function addTask() {
     let text = typedText.trim();
     if (text === '') return; //ignore empty tasks
-    if (TaskSignal.length >= 10) return; //this keeps list on the canvas
+    if (tasks.length >= 10) return; //this keeps list on the canvas
 
     //this essentially adds a new task object at the end of the tasks array (and it starts as not done)
     tasks.push({text: text, done: false});
@@ -130,6 +130,7 @@ function keyPressed() {
 }
 
 function keyTyped() {
+    console.log("key typed:", key);
     if (key.length === 1 && typedText.length < 25) {
         typedText += key;
     }
