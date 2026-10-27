@@ -17,6 +17,10 @@ let typedText = '';
 let rowHeight = 30;
 let listTop = 150;
 
+//Variables that adjust the position of interactive interactve (centers it in the middle of the browser screen)
+let contentWidth = 400; //this is the width of the to do list
+let contentHeight = 450; //height of layout
+
 /**
  * Creates the canvas (to the size of the browser and sets the default text size 
 */
@@ -30,8 +34,9 @@ function setup() {
 */
 
 function draw() {
-
     background("#000000");
+    translate(getOffsetX(), getOffsetY()) //moves everything draw after this line
+
     drawTitle();
     drawInputBox();
     drawAddButton();
@@ -124,7 +129,10 @@ function addTask() {
 //FUNCTIONS FOR KEYBOARD/MOUSE INTERACTIONS
 //FOR MOUSE
 function mousePressed() {
-    if (mouseX > 250 && mouseX < 320 && mouseY > 60 && mouseY < 92) {
+    let mx = mouseX - getOffsetX();
+    let my = mouseY - getOffsetY();
+
+    if (mx > 250 && mx < 320 && my > 60 && my < 92) {
         addTask();
         return;
     }
@@ -132,10 +140,10 @@ function mousePressed() {
     //clicks on a task row
     for(let i=0; i < tasks.length; i ++) {
         let y=listTop + i * rowHeight;
-        if(mouseY > y && mouseY < y + rowHeight - 5) {
-            if (mouseX > 355 && mouseX < 390) {
+        if(my > y && my < y + rowHeight - 5) {
+            if (mx > 355 && mx < 390) {
                 deleteTask(i); //when the x is clicked on
-            } else if (mouseX > 10 && mouseX < 350) {
+            } else if (mx > 10 && mx < 350) {
                 toggleTask(i);
             }
             return;
@@ -169,6 +177,16 @@ function toggleTask(index) {
 //This function REMOVES the task at said position from the tasks array
 function deleteTask(index) {
     tasks.splice(index, 1);
+}
+
+//FUNCTIONS FOR WINDOW (POSITION)
+
+function getOffsetX() {
+    return (width - contentWidth) /2;
+}
+
+function getOffsetY() {
+    return (height - contentHeight) /2;
 }
 
 function windowResized() {
