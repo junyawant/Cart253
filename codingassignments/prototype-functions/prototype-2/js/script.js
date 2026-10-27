@@ -119,6 +119,29 @@ function addTask() {
     typedText = '';
 }
 
+
+//FUNCTIONS FOR KEYBOARD/MOUSE INTERACTIONS
+//FOR MOUSE
+function mousePressed() {
+    if (mouseX > 300 & mouseX < 370 && mouseY > 60 && mouseY < 92) {
+        addTask();
+        return;
+    }
+
+    //clicks on a task row
+    for(let i=0; i < tasks.length; i ++) {
+        let y=listTop + i * rowHeight;
+        if(mouseY > y && mouseY < y + rowHeight - 5) {
+            if (mouseX > 355 && mouseX < 390) {
+                deleteTask(); //when the x is clicked on
+            } else if (mouseX > 10 && mouseX < 350) {
+                toggleTask(i);
+            }
+            return;
+        }
+    }
+}
+
 function keyPressed() {
     if(keyCode === ENTER) {
         addTask();
@@ -128,6 +151,8 @@ function keyPressed() {
     }
 }
 
+
+//FOR KEYBOARD/TASKS
 function keyTyped() {
     console.log("key typed:", key);
     if (key.length === 1 && typedText.length < 25) {
@@ -135,6 +160,7 @@ function keyTyped() {
     }
     return false;
 }
+
 
 //This function flips a task between being done and not done
 function toggleTask(index) {
