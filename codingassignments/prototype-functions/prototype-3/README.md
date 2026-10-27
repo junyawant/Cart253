@@ -5,7 +5,7 @@
 
 ## Erica Galvez
 
-- [View this project online](/codingassignments/prototype-functions/prototype-3/)
+- [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-functions/prototype-3/)
 - [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-functions/prototype-3/js/script.js)
 
 ![skipcounts](./assets/images/skipcounts.png)
