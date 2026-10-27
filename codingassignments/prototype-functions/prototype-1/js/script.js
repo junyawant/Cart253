@@ -196,10 +196,10 @@ function getTimeLeft() {
 
 //This function turns milliseconds into text
 function formatTime(ms) {
-    let totalSeconds = ceil(ms/1000);
+    let totalSeconds = ceil(ms/1000); // ceil() rounds p to the next WHOLE number. so 24.2 shows as 25 (meaning the timer doesnt show 00:00 before time is ACTUALLY up)
     let mins = floor (totalSeconds/60);
     let secs = totalSeconds % 60;
-    return nf(mins, 2) + ":" + nf(secs, 2);
+    return nf(mins, 2) + ":" + nf(secs, 2); //nf() adds a leading zero (as in, 5 becomes "05")
 }
 
 //This function draws the math symbols (decided on ALL 4 for visual balance + variety (in the case where i would be using a timer while tutoring different subjects))
@@ -267,7 +267,7 @@ function mousePressed() {
         let secs = int (secondsInput.value());
     
 
-   if(isNaN(mins)) {
+   if(isNaN(mins)) { //isNan() checks if a value is not a number (true for an empty box)
     mins = 0;
    }
    if (isNaN(secs)) {
