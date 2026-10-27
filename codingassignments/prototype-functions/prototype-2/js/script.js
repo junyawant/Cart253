@@ -67,10 +67,9 @@ function drawInputBox() {
 function drawAddButton() {
     stroke(0);
     fill(230);
-    rect(150, 60, 70, 32);
+    rect(250, 60, 70, 32);
 
     noStroke();
     fill(0);
-    text("Add", 222, 82);
-
+    text("Add", 270, 82);
 }
