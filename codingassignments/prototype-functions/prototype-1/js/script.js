@@ -116,6 +116,14 @@ function placeInput(box, x, y, w) {
     box.style("font-size", 16 * zoom + "px");
 }
 
+//This functions returns (true) if the mouse is on the button
+function mouseOnButton() {
+    let pageMouseX = (mouseX - offsetX) / zoom;
+    let pageMouseY = (mouseY -  offsetY) / zoom;
+
+    return pageMouseX < btnX && pageMouseX < btnX + btnW && pageMouseY > btnY && pageMouseY < btnY + btnH;
+}
+
 function drawTitleScreen() {
     //drawing the 4 symbols in a grid (2x2)
     for (let i = 0; i < symbols.length; i++) {
@@ -145,7 +153,7 @@ function drawTimerScreen() {
     if (timeLeft === 0) {
         text("TIME'S UP!", 240, 100);
     } else {
-        text("LET'S GO, YOU GOT THIS!", 240, 100);
+        text("YOU GOT THIS!", 240, 100);
     }
 
     //Text for the task inserted (Input + Buttons)
@@ -233,4 +241,23 @@ function drawButton(label) {
     textFont("sans-serif");
     textSize(22);
     text(label, btnX + btnW/2, btnY + btnH/2);
+}
+
+function mousePressed() {
+    if (mouseOnButton() && mode === "title") {
+        taskText = taskInput.value();
+        let mins = int (minutesInput.value());
+        let secs = int (secondsInput.value());
+    }
+
+   if(isNaN(mins)) {
+    mins = 0;
+   }
+   if (isNaN(secs)) {
+    secs = 0;
+   }
+
+   duration = (mins * 60 + secs) * 1000;
+   startTime = millis();
+   mode = "work";
 }
