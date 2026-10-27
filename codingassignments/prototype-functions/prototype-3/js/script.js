@@ -28,3 +28,12 @@ function draw() {
     background("#FFFFFF");
 
 }
+
+//This functions draws the 3 numbers on the screen
+function drawNumber(num, y) {
+    fill("#000000");
+    noStroke();
+    textAlign(CENTER, CENTER);
+    textSize(120);
+    text(num, width/2, y);
+}
