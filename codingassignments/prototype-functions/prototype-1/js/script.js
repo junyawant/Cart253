@@ -43,9 +43,9 @@ let offsetY = 0; //creates gap on top
 
 //Variables for buttons (Position + Size)
 let btnX = 125;
-let btnY = 500;
+let btnY = 570;
 let btnW = 230;
-let btnH = 60;
+let btnH = 56;
 
 //Adding it before setup to load the font before the sketch even starts
 function preload() {
@@ -144,6 +144,10 @@ function drawTimerScreen() {
     line(60, 470, 60 + 360 * progress, 470); //filled part of the bar
     noStroke(); 
 
+    //Resets/Creates new timer
+    if (timeLeft === 0) {
+        drawButton("NEW TIMER");
+    }
 }
 
 //This function returns the milliseconds that may be left (BUT IS NEVER LESS THAN 0) --> so that we dont hit any negative numbers
@@ -205,5 +209,5 @@ function drawButton(label) {
 
     textFont("sans-serif");
     textSize(22);
-    text(label, btnX + btnW/2, btnY, btnH/2);
+    text(label, btnX + btnW/2, btnY + btnH/2);
 }
