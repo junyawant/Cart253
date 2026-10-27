@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Todo list!
+ * Erica Galvez
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * My vision for this prototype is to create a to do list! A simple and easier, more straight forward project after the more complex one in prototype 1.
  */
 
 "use strict";
