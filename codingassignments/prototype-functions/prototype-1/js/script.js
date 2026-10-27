@@ -61,7 +61,7 @@ function setup() {
 
     minutesInput = createInput("25", "number");
 
-    secondsInput = createInput("25", "number");
+    secondsInput = createInput("0", "number");
     
     //puting the boxes in an array
     inputs = [taskInput, minutesInput, secondsInput];
@@ -182,4 +182,28 @@ function drawSymbol (symbol, x, y) {
     }
 
     noStroke();
+}
+
+function drawButton(label) {
+    stroke("#FFFFFF");
+    strokeWeight(4);
+    if (mouseOnButton()) {
+        fill("#FFFFFF");
+    } else {
+        noFill();
+    }
+
+    rect (btnX, btnY, btnW, btnH, 6);
+
+    noStroke();
+
+    if(mouseOnButton()) {
+        fill (BG_COLOR);
+    } else {
+        fill("#FFFFFF");
+    }
+
+    textFont("sans-serif");
+    textSize(22);
+    text(label, btnX + btnW/2, btnY, btnH/2);
 }
