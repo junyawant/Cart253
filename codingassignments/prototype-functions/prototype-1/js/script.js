@@ -69,6 +69,7 @@ function setup() {
         inputs[i].style("text-align", "center");
     }
 
+    updateLayout();
 }
 
 
@@ -94,6 +95,7 @@ function draw() {
 //This function follows the size of the window (whether it changes sizes)
 function windowResized() {
     resizeCanvas(windowWidth,windowHeight);
+    updateLayout();
 }
 
 //This function works out the zoom + gaps + input boxes
@@ -101,6 +103,10 @@ function updateLayout() {
     zoom = min(width/pageW, height/pageH);
     offsetX = (width - pageW * zoom) /2;
     offsetY = (height - pageH * zoom) /2;
+
+    placeInput(taskInput, 90, 420, 300);
+    placeInput(minutesInput, 140, 515, 100);
+    placeInput(secondsInput, 260, 515, 100);
 }
 
 //Puts an input box at X AND Y (minutes + seconds)
