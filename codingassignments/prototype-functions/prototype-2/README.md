@@ -1,23 +1,26 @@
-# TITLE OF PROJECT
+---
+---
 
-AUTHOR NAME
+# To Do List!
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+## Erica Galvez
+
+- [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-functions/prototype-2/)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-functions/prototype-2/js/script.js)
+
+![todolist](./assets/images/todolist.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This prototype was an attempt at creating a simple to do list! I've seen this been done a lot more straight forwardly with HTML but wanted to give it a try with p5.js! A much more simple and easier prototype than the previous, more complex one (prototype 1) (in my opinion atleast).
+
+I was equally inspired to do this project due to a topic brought up at work where someone asked how others kept track of the things they need to get done in a week. I typically use google calendar but thought creating this may be useful for me in the future!
+
+## How it Works
+- Use your mouse to interact with the boxes/buttons on screen!
+- Use the input box "Add Task" and write in something (using your keyboard), you need to get done!
+- Once the task is done, hit the checkbox to display it as completed!
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
