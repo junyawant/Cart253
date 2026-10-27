@@ -23,4 +23,20 @@ function setup() {
 function draw() {
     background("#FFFFFF");
 
+    drawTitle();
+
+}
+
+function drawTitle() {
+    //Might change the font to PressStart2P
+    fill("#000000");
+    noStroke();
+    textSize(32);
+    textStyle(BOLD);
+    text ("To Do List", 10, 40);
+
+    textSize(22);
+    text ("Task List", 10, 125);
+    textStyle(NORMAL);
+    textSize(16);
 }
