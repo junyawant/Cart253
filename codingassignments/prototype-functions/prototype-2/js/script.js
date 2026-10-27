@@ -18,10 +18,10 @@ let rowHeight = 30;
 let listTop = 150;
 
 /**
- * Creates the canvas and sets the default text size 
+ * Creates the canvas (to the size of the browser and sets the default text size 
 */
 function setup() {
-    createCanvas(400, 500);
+    createCanvas(windowWidth, windowHeight);
     textSize(16);
 }
 
@@ -65,7 +65,7 @@ function drawInputBox() {
         fill(150);
         text("Add task", 18, 82);
     } else {
-        fill("#000000");
+        fill("#FFFFFF");
         text(typedText, 18, 82);
     }
 }
@@ -97,7 +97,7 @@ function drawTasks() {
 
     //This draws the task text AND crosses it out when/if said task is done
     noStroke();
-    fill(tasks[i].done ? 150: 0);
+    fill(tasks[i].done ? 150: 255);
     text(tasks[i].text, 45, y + 15);
     
     if(tasks[i].done) {
@@ -169,4 +169,8 @@ function toggleTask(index) {
 //This function REMOVES the task at said position from the tasks array
 function deleteTask(index) {
     tasks.splice(index, 1);
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
