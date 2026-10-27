@@ -33,6 +33,21 @@ let mode = "title";
 let startTime = 0;
 let duration = 0;
 
+//DESIGNING THE AESTHETIC APPEARANCE
+//Variables for screen (Visuals)
+let pageW = 400;
+let pageH = 600;
+let zoom = 1; //scales screen
+let offsetX = 0; //creates gap on left (so the page is centered)
+let offsetY = 0; //creates gap on top
+
+//Variables for buttons (Position + Size)
+let btnX = 125;
+let btnY = 500;
+let btnW = 230;
+let btnH = 60;
+
+
 function preload() {
     myFont = loadFont(FONT_PATH);
 }
