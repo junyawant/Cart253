@@ -81,7 +81,7 @@ function drawAddButton() {
 function drawTasks() {
     for(let i = 0; i < tasks.length; i++) {
         let y = listTop + i * rowHeight;
-    }
+    
 
     //This draws the checkbox
     stroke(0);
@@ -106,8 +106,7 @@ function drawTasks() {
     noStroke();
     fill(200, 0, 0);
     text("X", 365, y + 15);
-
-
+}
 }
 
 function addTask() {
@@ -135,4 +134,14 @@ function keyTyped() {
         typedText += key;
     }
     return false;
+}
+
+//This function flips a task between being done and not done
+function toggleTask(index) {
+    tasks[index].done = !tasks[index].done;
+}
+
+//This function REMOVES the task at said position from the tasks array
+function deleteTask(index) {
+    tasks.splice(index, 1);
 }
