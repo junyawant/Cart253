@@ -37,3 +37,14 @@ function drawNumber(num, y) {
     textSize(120);
     text(num, width/2, y);
 }
+
+function generateNumbers() {
+    let result = [];
+
+    while (result.length < 3) {
+        let n = floor(random(2, 13)) //numbers 2 up to 12
+        if (!result.includes(m)) { //only add it if its new
+            result.push(n);
+        }
+    } 
+}
