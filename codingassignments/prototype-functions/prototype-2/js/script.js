@@ -78,6 +78,38 @@ function drawAddButton() {
     text("Add", 270, 82);
 }
 
+function drawTasks() {
+    for(let i = 0; i < tasks.length; i++) {
+        let y = listTop + i * rowHeight;
+    }
+
+    //This draws the checkbox
+    stroke(0);
+    fill("#FFFFFF");
+    rect(15, y, 18, 18);
+
+    if(tasks[i].done) {
+        line(18, y + 9, 24, y + 15);
+        line(24, y + 15, 31, y + 3);
+    }
+
+    //This draws the task text AND crosses it out when/if said task is done
+    noStroke();
+    fill(tasks[i].done ? 150: 0);
+    text(tasks[i].text, 45, y + 15);
+    
+    if(tasks[i].done) {
+        stroke(150);
+        line(45, y + 10, 45 + textWidth(tasks[i].text), y + 10);
+    }
+
+    noStroke();
+    fill(200, 0, 0);
+    text("X", 365, y + 15);
+
+
+}
+
 function addTask() {
     let text = typedText.trim();
     if (text === '') return; //ignore empty tasks
@@ -85,4 +117,5 @@ function addTask() {
 
     //this essentially adds a new task object at the end of the tasks array (and it starts as not done)
     tasks.push({text: text, done: false});
+    typedText = '';
 }
