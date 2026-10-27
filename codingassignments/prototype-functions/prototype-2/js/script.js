@@ -31,7 +31,7 @@ function setup() {
 
 function draw() {
 
-    background("#FFFFFF");
+    background("#000000");
     drawTitle();
     drawInputBox();
     drawAddButton();
@@ -42,7 +42,7 @@ function draw() {
 //This function draws the main text on the screen (title and subtitle)
 function drawTitle() {
     //Might change the font to PressStart2P
-    fill("#000000");
+    fill("#FFFFFF");
     noStroke();
     textSize(32);
     textStyle(BOLD);
@@ -56,8 +56,8 @@ function drawTitle() {
 
 //This functions draws the box where the input of what task needs to be done
 function drawInputBox() {
-    stroke(0);
-    fill("#FFFFFF");
+    stroke("#FFFFFF");
+    fill("#000000");
     rect(10, 60, 200, 32);
 
     noStroke();
@@ -71,12 +71,12 @@ function drawInputBox() {
 }
 
 function drawAddButton() {
-    stroke(0);
-    fill(230);
+    stroke("#FFFFFF");
+    fill(40);
     rect(250, 60, 70, 32);
 
     noStroke();
-    fill(0);
+    fill("#FFFFFF");
     text("Add", 270, 82);
 }
 
@@ -86,8 +86,8 @@ function drawTasks() {
     
 
     //This draws the checkbox
-    stroke(0);
-    fill("#FFFFFF");
+    stroke("#FFFFFF");
+    fill("#000000");
     rect(15, y, 18, 18);
 
     if(tasks[i].done) {
