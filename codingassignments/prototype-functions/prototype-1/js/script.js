@@ -7,10 +7,6 @@
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-
 //Variables
 const FONT_PATH = "assets/Press_Start_2P/PressStart2P-Regular.ttf";
 const BG_COLOR = ("#254E70");
@@ -52,6 +48,12 @@ function preload() {
     myFont = loadFont(FONT_PATH);
 }
 
+/**
+ * Creates the canvas (size of the window)
+ * Creates the 3 input boxes ( task, minute, seconds)
+ * Calls on updateLayout so that everything is placed correctly
+*/
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     textAlign(CENTER, CENTER);
@@ -74,7 +76,8 @@ function setup() {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Runs over and over, colors the background, scales and centers everything to fit the window. 
+ * Draws the title screen/timer screen depending on the curent mode.
 */
 function draw() {
     background(BG_COLOR);
