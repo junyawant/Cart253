@@ -1,8 +1,11 @@
 /**
- * Todo list!
+ * To Do List!
  * Erica Galvez
  * 
- * My vision for this prototype is to create a to do list! A simple and easier, more straight forward project after the more complex one in prototype 1.
+ * My vision for this prototype is to create a to do list! A simple and easier, 
+ * more straight forward project after the more complex one in prototype 1. (atleast to me)
+ * I was inspired to do this project due to a topic brought up at work where someone asked 
+ * how others kept track of the things they need to get done in a week.
  */
 
 "use strict";
@@ -15,28 +18,27 @@ let rowHeight = 30;
 let listTop = 150;
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas and sets the default text size 
 */
 function setup() {
     createCanvas(400, 500);
     textSize(16);
-
 }
 
-
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Redraws the whole to do list every frame
 */
-function draw() {
-    background("#FFFFFF");
 
+function draw() {
+
+    background("#FFFFFF");
     drawTitle();
     drawInputBox();
     drawAddButton();
     drawTasks();
-
 }
 
+//FUNCTIONS THAT DRAW CERTAIN ELEMENTS OF THE CODE (title, inputbox, button, tasks)
 //This function draws the main text on the screen (title and subtitle)
 function drawTitle() {
     //Might change the font to PressStart2P
@@ -119,11 +121,10 @@ function addTask() {
     typedText = '';
 }
 
-
 //FUNCTIONS FOR KEYBOARD/MOUSE INTERACTIONS
 //FOR MOUSE
 function mousePressed() {
-    if (mouseX > 300 & mouseX < 370 && mouseY > 60 && mouseY < 92) {
+    if (mouseX > 250 && mouseX < 320 && mouseY > 60 && mouseY < 92) {
         addTask();
         return;
     }
@@ -133,7 +134,7 @@ function mousePressed() {
         let y=listTop + i * rowHeight;
         if(mouseY > y && mouseY < y + rowHeight - 5) {
             if (mouseX > 355 && mouseX < 390) {
-                deleteTask(); //when the x is clicked on
+                deleteTask(i); //when the x is clicked on
             } else if (mouseX > 10 && mouseX < 350) {
                 toggleTask(i);
             }
@@ -151,7 +152,6 @@ function keyPressed() {
     }
 }
 
-
 //FOR KEYBOARD/TASKS
 function keyTyped() {
     console.log("key typed:", key);
@@ -160,7 +160,6 @@ function keyTyped() {
     }
     return false;
 }
-
 
 //This function flips a task between being done and not done
 function toggleTask(index) {
