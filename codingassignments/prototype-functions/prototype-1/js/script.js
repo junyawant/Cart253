@@ -243,6 +243,16 @@ function drawButton(label) {
     text(label, btnX + btnW/2, btnY + btnH/2);
 }
 
+function setInputsVisible(visible) {
+    for (let i = 0; i < inputs.length; i ++) {
+        if (visible) {
+            inputs[i].show();
+        } else {
+            inputs[i].hide();
+        }
+    }
+}
+
 function mousePressed() {
     if (mouseOnButton() && mode === "title") {
         taskText = taskInput.value();
