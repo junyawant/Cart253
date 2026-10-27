@@ -29,9 +29,11 @@ function draw() {
 
     drawTitle();
     drawInputBox();
+    drawAddButton();
 
 }
 
+//This function draws the main text on the screen (title and subtitle)
 function drawTitle() {
     //Might change the font to PressStart2P
     fill("#000000");
@@ -46,6 +48,7 @@ function drawTitle() {
     textSize(16);
 }
 
+//This functions draws the box where the input of what task needs to be done
 function drawInputBox() {
     stroke(0);
     fill("#FFFFFF");
@@ -59,4 +62,15 @@ function drawInputBox() {
         fill("#000000");
         text(typedText, 18, 82);
     }
+}
+
+function drawAddButton() {
+    stroke(0);
+    fill(230);
+    rect(150, 60, 70, 32);
+
+    noStroke();
+    fill(0);
+    text("Add", 222, 82);
+
 }
