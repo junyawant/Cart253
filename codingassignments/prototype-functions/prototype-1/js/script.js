@@ -35,8 +35,8 @@ let duration = 0;
 
 //DESIGNING THE AESTHETIC APPEARANCE
 //Variables for screen (Visuals)
-let pageW = 400;
-let pageH = 600;
+let pageW = 480;
+let pageH = 720;
 let zoom = 1; //scales screen
 let offsetX = 0; //creates gap on left (so the page is centered)
 let offsetY = 0; //creates gap on top
@@ -61,7 +61,7 @@ function setup() {
 
     minutesInput = createInput("25", "number");
 
-    secondsInputInput = createInput("25", "number");
+    secondsInput = createInput("25", "number");
     
     //puting the boxes in an array
     inputs = [taskInput, minutesInput, secondsInput];
@@ -82,7 +82,9 @@ function draw() {
     translate(offsetX, offsetY);
     scale(zoom);
     
-    
+    drawTitleScreen();
+
+    pop();
     
 
 }
@@ -114,7 +116,7 @@ function drawSymbol (symbol, x, y) {
         line(x - 40, y, x + 40, y);
         line(x, y - 40, x, y + 40);
     } else if (symbol === "-") {
-        line (x - 40, y, x + 40);
+        line (x - 40, y, x + 40, y);
     } else if (symbol === "x") {
         line (x - 40, y - 40, x + 40, y + 40);
         line (x - 40, y + 40, x + 40, y - 40);
@@ -123,7 +125,7 @@ function drawSymbol (symbol, x, y) {
         noStroke();
         fill("#FFFFFF");
         ellipse(x, y - 32, 20);
-        ellipse(x, y - 32, 20);
+        ellipse(x, y + 32, 20);
     }
 
     noStroke();
