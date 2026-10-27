@@ -24,6 +24,15 @@ let minutesInput;
 let secondsInput;
 let inputs = [];
 
+//For the 4 math symboles in the title screen
+//Either all symbols or just one? (TBD)
+let symbols = ["+", "-", "x", "/"];
+
+let taskText = "";
+let mode = "title";
+let startTime = 0;
+let duration = 0;
+
 function preload() {
     myFont = loadFont(FONT_PATH);
 }
