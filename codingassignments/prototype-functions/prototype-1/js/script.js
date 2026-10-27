@@ -108,6 +108,21 @@ function drawTitleScreen() {
 
 }
 
+//This function returns the milliseconds that may be left (BUT IS NEVER LESS THAN 0) --> so that we dont hit any negative numbers
+function getTimeLeft() {
+    let timeLeft = duration - (millis() - startTime);
+    return max(timeLeft, 0);
+}
+
+//This function turns milliseconds into text
+function formatTime(ms) {
+    let totalSeconds = ceil(ms/1000);
+    let mins = floor (totalSeconds/60);
+    let secs = totalSeconds % 60;
+    return nf(mins, 2) + ":" + nf(secs, 2);
+}
+
+//This function draws the math symbols (decided on ALL 4 for visual balance + variety (in the case where i would be using a timer while tutoring different subjects))
 function drawSymbol (symbol, x, y) {
     stroke("#FFFFFF");
     strokeWeight(14);
