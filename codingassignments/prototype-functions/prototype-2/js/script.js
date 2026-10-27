@@ -7,6 +7,10 @@
 
 "use strict";
 
+//Variables
+let task = [];
+let typedText = '';
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -39,4 +43,19 @@ function drawTitle() {
     text ("Task List", 10, 125);
     textStyle(NORMAL);
     textSize(16);
+}
+
+function drawInputBox() {
+    stroke(0);
+    fill("#FFFFFF");
+    rect(10, 60, 200, 32);
+
+    noStroke();
+    if(typedText === '') {
+        fill(150);
+        text("Add task", 18, 82);
+    } else {
+        fill("#000000");
+        text(typedText, 18, 82);
+    }
 }
