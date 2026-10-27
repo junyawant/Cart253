@@ -91,14 +91,23 @@ function draw() {
     pop();
 }
 
+//This function follows the size of the window (whether it changes sizes)
 function windowResized() {
     resizeCanvas(windowWidth,windowHeight);
 }
 
+//This function works out the zoom + gaps + input boxes
 function updateLayout() {
     zoom = min(width/pageW, height/pageH);
     offsetX = (width - pageW * zoom) /2;
     offsetY = (height - pageH * zoom) /2;
+}
+
+//Puts an input box at X AND Y (minutes + seconds)
+function placeInput(box, x, y, w) {
+    box.position(offsetX + x * zoom, offsetY + y * zoom);
+    box.size(w * zoom, 24 * zoom);
+    box.style("font-size", 16 * zoom + "px");
 }
 
 function drawTitleScreen() {
