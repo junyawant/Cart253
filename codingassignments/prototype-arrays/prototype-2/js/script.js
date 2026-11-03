@@ -97,8 +97,8 @@ function drawButtons() {
 
 function mousePressed() {
     let y = height * 0.6;
-    let gap = min(width, height) * 0.9;
-    let hitSize = min(width, height) * 0.02;
+    let gap = min(width, height) * 0.15;
+    let hitSize = min(width, height) * 0.05;
     
     if (dist(mouseX, mouseY, width / 2, y) < hitSize) {
         playSong();
