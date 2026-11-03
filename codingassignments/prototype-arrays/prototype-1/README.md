@@ -8,7 +8,7 @@
 - [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-arrays/prototype-1/)
 - [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-arrays/prototype-1/js/script.js)
 
-[hatoftheday](./assets/images/hatoftheday.png)
+![hatoftheday](./assets/images/hatoftheday.png)
 
 ## Description
 
