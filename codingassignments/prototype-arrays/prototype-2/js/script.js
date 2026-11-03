@@ -16,6 +16,9 @@ let songs = [];
 let currentSong = 0;
 let isPlaying = false;
 
+let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices - Baptiste Robert (Baptiste R.)", "Syd Matters - Obstacles - Syd matters", "Syd Matters - To All of You - Syd matters" ] 
+let files = ["astronomy", "futileDevices", "obstacles", "toallofyou"];
+
 function preload() {
     landscape = loadImage("assets/images/train.jpg");
 
@@ -41,7 +44,14 @@ function draw() {
     background("#000000");
     image(landscape, width / 2, height / 2, width, height);
 
+    //Text for song title 
+    fill("#FFFFFF");
+    textSize(min(width, height) * 0.05);
+    textStyle(BOLD);
+    text(titles[currentSong], width / 2, height * 0.1);
+
 }
+
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
