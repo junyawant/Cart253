@@ -33,6 +33,7 @@ function setup() {
 function draw() {
     background("#000000");
 
+    //Old Code (Used to stretch images)
     // let hatSize = min(width, height) * 0.5;
     // image(hats[currentHat], width / 2, height / 2, hatSize, hatSize)
 
