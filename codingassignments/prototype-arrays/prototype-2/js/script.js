@@ -42,3 +42,7 @@ function draw() {
     image(landscape, width / 2, height / 2, width, height);
 
 }
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
