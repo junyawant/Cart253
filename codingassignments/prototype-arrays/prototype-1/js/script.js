@@ -2,7 +2,7 @@
  * Title of Project
  * Author Name
  * 
- * The idea for this prototype: cycling through different pictures of clothes to create an outfit
+ * motivational quotes
  */
 
 "use strict";
