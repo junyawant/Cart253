@@ -16,10 +16,16 @@ let songs = [];
 let currentSong = 0;
 let isPlaying = false;
 
+function preload() {
+    landscape = loadImage("assets/images/train.jpg");
+}
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(windowWidth, windowHeight);
+    imageMode(CENTER);
 
 }
 
@@ -28,5 +34,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#000000");
+    image(landscape, width / 2, height / 2, width, height);
 
 }
