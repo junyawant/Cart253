@@ -2,8 +2,10 @@
  * Title of Project
  * Author Name
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * My idea for this prototype is still being developed.
+ * Here are my ideas:
+ * 1. A speech of motivational quote displayed on screen (usings arrays)
+ * 2. Cycling through songs using arrays (?)
  */
 
 "use strict";
