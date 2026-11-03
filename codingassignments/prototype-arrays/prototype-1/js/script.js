@@ -23,9 +23,8 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     imageMode(CENTER);
-
+    textAlign(CENTER);
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
@@ -37,11 +36,18 @@ function draw() {
     // let hatSize = min(width, height) * 0.5;
     // image(hats[currentHat], width / 2, height / 2, hatSize, hatSize)
 
+    //Scales the image to fit within the canvas WITHOUT stretching it
     let img = hats[currentHat];
     let maxSize = min(width, height) * 0.5;
     let scaleFactor = min(maxSize / img.width, maxSize / img.height);
     image(img, width / 2, height / 2, img.width * scaleFactor, img.height * scaleFactor);
 
+    //Displays text + symbols
+    fill("#FFFFFF");
+    textSize(min(width, height) * 0.05);
+    textStyle(BOLD);
+    text("What Hat Should I Wear Today?", width / 2, height * 0.1);
+    text("Use the left and right arrow keys to change hats!", width / 2, height * 0.9);
 }
 
 function keyPressed() {
