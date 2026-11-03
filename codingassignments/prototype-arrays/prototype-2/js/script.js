@@ -21,7 +21,7 @@ let titleY = 0.4;
 let trackY = 0.5;
 let buttonY = 0.9;
 
-let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices - Baptiste Robert (Baptiste R.)", "Syd Matters - Obstacles", "Syd Matters - To All of You" ] 
+let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices", "Syd Matters - Obstacles", "Syd Matters - To All of You" ] 
 let files = ["astronomy", "futileDevices", "obstacles", "toallofyou"];
 
 function preload() {
