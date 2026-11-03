@@ -84,7 +84,13 @@ function mousePressed() {
     let gap = min(width, height) * 0.15;
     let hitSize = min(Width, height) * 0.06;
     
-
+    if (dist(mouseX, mouseY, width / 2, y) < hitSize) {
+        togglePlay();
+    } else if (dist(mouseX, mouseY, width / 2 - gap, y) < hitSize) {
+        previousSong();
+    } else if (dist(mouseX, mouseY, width / 2 + gap, y) < hitSize) {
+        nextSong();
+    }
 }
 
 function playSong() {
