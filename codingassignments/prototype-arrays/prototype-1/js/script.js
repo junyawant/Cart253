@@ -34,6 +34,20 @@ function draw() {
     background("#000000");
 }
 
+function keyPressed() {
+    if(keyCode === RIGHT_ARROW) {
+        currentHat++;
+        if(currentHat >= hats.length) {
+            currentHat = 0;
+        }
+    } else if (keyCode === LEFT_ARROW) {
+        currentHat--;
+        if(currentHat < 0) {
+            currentHat = hats.length - 1;
+        }
+    }
+}
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
