@@ -22,7 +22,7 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-
+    imageMode(CENTER);
 
 }
 
@@ -32,6 +32,9 @@ function setup() {
 */
 function draw() {
     background("#000000");
+
+    let hatSize = min(width, height) * 0.5;
+    image(hats[currentHat], width / 2, height / 2, hatSize, hatSize)
 }
 
 function keyPressed() {
