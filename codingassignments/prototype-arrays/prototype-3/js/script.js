@@ -12,8 +12,8 @@ let spidermanImg;
 
 
 function preload() {
-    spidermanImg = loadImage()
-    
+    spidermanImg = loadImage("assets/images/spiderman.png");
+
 }
 
 /**
@@ -29,6 +29,9 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#000000");
+
+    image(spidermanImg, 0,0);
 
 }
 
