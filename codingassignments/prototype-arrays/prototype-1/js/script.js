@@ -7,10 +7,6 @@
 
 "use strict";
 
-/**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
-
 let hats = []; //array that will hold all my hat images
 let currentHat = 0; //index of the hat being displayed 
 
@@ -20,6 +16,10 @@ function preload() {
     }
 }
 
+/**
+ * Creates the canavas the size of the browser window and sets iamges + text to be centered on the screen
+*/
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     imageMode(CENTER);
@@ -27,7 +27,7 @@ function setup() {
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the current hat and the instructions text on how to interact with the project
 */
 function draw() {
     background("#000000");
