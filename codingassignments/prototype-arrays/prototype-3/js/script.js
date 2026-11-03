@@ -8,16 +8,19 @@
 "use strict";
 
 //Variables
-spidermanImg;
+let spidermanImg;
+
 
 function preload() {
     spidermanImg = loadImage()
+    
 }
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
+    createCanvas(windowWidth, windowHeight)
 
 }
 
@@ -27,4 +30,8 @@ function setup() {
 */
 function draw() {
 
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight)
 }
