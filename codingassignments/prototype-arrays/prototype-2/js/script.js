@@ -67,6 +67,8 @@ function drawButtons() {
     let gap = min (width, height) * 0.15;
     let s = min(width, height) * 0.04;
 
+    noStroke();
+
     //PREVIOUS --> TRIANGLE POINTING LEFT
     rect(width / 2 - gap - s, y - s, s * 0.3, s * 2); 
     triangle(width / 2 - gap - s * 0.5, y,
