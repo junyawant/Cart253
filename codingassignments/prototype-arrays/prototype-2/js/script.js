@@ -73,7 +73,18 @@ function drawButtons() {
              width / 2 + gap - s, y + s,
              width / 2 + gap + s * 0.5, y);
     rect(width / 2 + gap + s * 0.7, y - s, s * 0.3, s * 2);
-    
+
+    //PLAY OR PAUSE BUTTON
+    if (isPlaying) {
+        //PAUSE --> 2 RECTANGLES
+        rect(width / 2 - s *0.6, y-s, s*0.4, s*2);
+        rect(width / 2 + s *0.2, y-s, s*0.4, s*2);
+    } else {
+        //PLAY icon
+        triangle(width / 2-s*0.6, y-s,
+            width / 2-s*0.6, y+s,
+            width / 2+s,y);
+        }
 }
 
 //This function checks which button was clicked 
@@ -82,10 +93,10 @@ function drawButtons() {
 function mousePressed() {
     let y = height * 0.9;
     let gap = min(width, height) * 0.15;
-    let hitSize = min(Width, height) * 0.06;
+    let hitSize = min(width, height) * 0.06;
     
     if (dist(mouseX, mouseY, width / 2, y) < hitSize) {
-        togglePlay();
+        playSong();
     } else if (dist(mouseX, mouseY, width / 2 - gap, y) < hitSize) {
         previousSong();
     } else if (dist(mouseX, mouseY, width / 2 + gap, y) < hitSize) {
