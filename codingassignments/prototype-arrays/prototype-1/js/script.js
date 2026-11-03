@@ -32,7 +32,8 @@ function setup() {
 */
 function draw() {
     background("#000000");
+}
 
-
-
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
