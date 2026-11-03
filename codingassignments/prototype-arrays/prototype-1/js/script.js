@@ -10,7 +10,13 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+let hats = []; //array that will hold all my hat images
+let currentHat = 0; //index of the hat being displayed 
+
 function setup() {
+    createCanvas(windowWidth, windowHeight);
+
 
 }
 
@@ -19,6 +25,7 @@ function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
+    background("#000000");
 
 
 
