@@ -33,8 +33,14 @@ function setup() {
 function draw() {
     background("#000000");
 
-    let hatSize = min(width, height) * 0.5;
-    image(hats[currentHat], width / 2, height / 2, hatSize, hatSize)
+    // let hatSize = min(width, height) * 0.5;
+    // image(hats[currentHat], width / 2, height / 2, hatSize, hatSize)
+
+    let img = hats[currentHat];
+    let maxSize = min(width, height) * 0.5;
+    let scaleFactor = min(maxSize / img.width, maxSize / img.height);
+    image(img, width / 2, height / 2, img.width * scaleFactor, img.height * scaleFactor);
+
 }
 
 function keyPressed() {
