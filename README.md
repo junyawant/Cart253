@@ -98,7 +98,9 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 
 ### Arrays
 #### [PROTOTYPE 1](codingassignments/prototype-arrays/prototype-1/README.md)
-![Screenshot of Prototype 1](./codingassignments/prototype-functions/prototype-1/assets/images/mathoclock.png)
+![Screenshot of Prototype 1](./codingassignments/prototype-arrays/prototype-1/assets/images/hatoftheday.png)
+1. [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-arrays/prototype-1/)
+2. [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-arrays/prototype-1/js/script.js)
 
 ## Challenges
 - [Instructions Challenge](codingchallenges/instructions-challenge/README.md)
