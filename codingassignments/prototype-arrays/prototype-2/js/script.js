@@ -16,6 +16,11 @@ let songs = [];
 let currentSong = 0;
 let isPlaying = false;
 
+//Variables to move song title and buttons
+let titleY = 0.2;
+let trackY = 0.3;
+let buttonY = 0.9;
+
 let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices - Baptiste Robert (Baptiste R.)", "Syd Matters - Obstacles", "Syd Matters - To All of You" ] 
 let files = ["astronomy", "futileDevices", "obstacles", "toallofyou"];
 
@@ -52,13 +57,13 @@ function draw() {
     text(titles[currentSong], width / 2, height * 0.1);
     textSize(min(width, height) * 0.03);
     textStyle(NORMAL);
-    text("Track " + (currentSong + 1) + " of " + songs.length, width / 2, height * 0.15);
+    text("Track " + (currentSong + 1) + " of " + songs.length, width / 2, height * trackY);
 
     drawButtons();
 }
 
 function drawButtons() {
-    let y = height * 0.9;
+    let y = height * buttonY;
     let gap = min (width, height) * 0.15;
     let s = min(width, height) * 0.04;
 
