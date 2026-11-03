@@ -84,6 +84,18 @@ function mousePressed() {
     let gap = min(width, height) * 0.15;
     let hitSize = min(Width, height) * 0.06;
 
+
+}
+
+function playSong() {
+    if (isPlaying) {
+        songs[currentSong].pause();
+        isPlaying = false;
+    } else {
+        songs[currentSong].play();
+        isPlaying = true;
+    }
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
