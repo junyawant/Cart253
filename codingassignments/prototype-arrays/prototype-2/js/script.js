@@ -97,6 +97,7 @@ function playSong() {
     }
 }
 
+// This functions stops the song currently playing and moves the index forward (next song)
 function nextSong() {
     songs[currentSong].stop();
     currentSong++;
@@ -108,6 +109,7 @@ function nextSong() {
     }
 }
 
+//This functions works similarly to the previous one, just goes backwards (previous song)
 function previousSong() {
     songs[currentSong].stop();
     currentSong--;
