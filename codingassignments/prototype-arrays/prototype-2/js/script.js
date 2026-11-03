@@ -33,6 +33,7 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     imageMode(CENTER);
+    textAlign(CENTER);
 
 }
 
@@ -49,6 +50,9 @@ function draw() {
     textSize(min(width, height) * 0.05);
     textStyle(BOLD);
     text(titles[currentSong], width / 2, height * 0.1);
+    textSize(min(width, height) * 0.03);
+    textStyle(NORMAL);
+    text("Track " + (currentSong + 1) + " of " + songs.length, width / 2, height * 0.15);
 
 }
 
