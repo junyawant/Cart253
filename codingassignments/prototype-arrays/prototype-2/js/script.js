@@ -95,6 +95,7 @@ function playSong() {
         songs[currentSong].play();
         isPlaying = true;
     }
+}
 
 function nextSong() {
     songs[currentSong].stop();
@@ -105,6 +106,18 @@ function nextSong() {
     if (isPlaying) {
         songs[currentSong].play();
     }
+}
+
+function previousSong() {
+    songs[currentSong].stop();
+    currentSong--;
+    if (currentSong < 0) {
+        currentSong = songs.length - 1;
+    }
+    if (isPlaying) {
+        songs[currentSong].play();  
+    }
+}
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
