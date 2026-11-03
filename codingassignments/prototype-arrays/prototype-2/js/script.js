@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Harmony on the Way Home
+ * Erica Galvez
  * 
  * My idea for this prototype is still being developed.
  * Here are my ideas:
@@ -9,6 +9,12 @@
  */
 
 "use strict";
+
+//Variables
+let landscape;
+let songs = [];
+let currentSong = 0;
+let isPlaying = false;
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
