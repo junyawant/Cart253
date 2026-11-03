@@ -34,15 +34,15 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     imageMode(CENTER);
     textAlign(CENTER);
-
 }
-
 
 /**
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
     background("#000000");
+
+    //Draws the background image (train)
     image(landscape, width / 2, height / 2, width, height);
 
     //Text for song title 
@@ -54,8 +54,27 @@ function draw() {
     textStyle(NORMAL);
     text("Track " + (currentSong + 1) + " of " + songs.length, width / 2, height * 0.15);
 
+    drawButtons();
 }
 
+function drawButtons() {
+    let y = height * 0.9;
+    let gap = min (width, height) * 0.15;
+    let s = min(width, height) * 0.04;
+
+    //PREVIOUS --> TRIANGLE POINTING LEFT
+    rect(width / 2 - gap - s, y - s, s * 0.3, s * 2); 
+    triangle(width / 2 - gap - s * 0.5, y,
+             width / 2 - gap + s, y - s,
+             width / 2 - gap + s, y + s);
+
+    //NEXT --> TRIANGLE POINTING RIGHT
+    triangle(width / 2 + gap - s, y - s,
+             width / 2 + gap - s, y + s,
+             width / 2 + gap + s * 0.5, y);
+    rect(width / 2 + gap + s * 0.7, y - s, s * 0.3, s * 2);
+    
+}
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
