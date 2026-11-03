@@ -18,6 +18,10 @@ let isPlaying = false;
 
 function preload() {
     landscape = loadImage("assets/images/train.jpg");
+
+    for (let i = 0; i < files.length; i++) {
+        songs.push(loadSound("assets/sounds/" + files[i] + ".mp3"));
+    }
 }
 
 /**
