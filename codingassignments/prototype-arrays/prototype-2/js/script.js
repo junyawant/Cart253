@@ -28,7 +28,7 @@ function preload() {
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Loads the canvas and centers imges + text
 */
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -37,7 +37,7 @@ function setup() {
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the background and song title(s)
 */
 function draw() {
     background("#000000");
