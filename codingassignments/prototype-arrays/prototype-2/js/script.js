@@ -76,6 +76,14 @@ function drawButtons() {
     
 }
 
+//This function checks which button was clicked 
+//(Measures the distance from the house to each button's center)
+
+function mousePressed() {
+    let y = height * 0.9;
+    let gap = min(width, height) * 0.15;
+    let hitSize = min(Width, height) * 0.06;
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
