@@ -17,8 +17,8 @@ let currentSong = 0;
 let isPlaying = false;
 
 //Variables to move song title and buttons
-let titleY = 0.2;
-let trackY = 0.3;
+let titleY = 0.4;
+let trackY = 0.5;
 let buttonY = 0.9;
 
 let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices - Baptiste Robert (Baptiste R.)", "Syd Matters - Obstacles", "Syd Matters - To All of You" ] 
@@ -54,7 +54,7 @@ function draw() {
     fill("#FFFFFF");
     textSize(min(width, height) * 0.05);
     textStyle(BOLD);
-    text(titles[currentSong], width / 2, height * 0.1);
+    text(titles[currentSong], width * 0.1, height * titleY, width * 0.8);
     textSize(min(width, height) * 0.03);
     textStyle(NORMAL);
     text("Track " + (currentSong + 1) + " of " + songs.length, width / 2, height * trackY);
@@ -63,7 +63,7 @@ function draw() {
 }
 
 function drawButtons() {
-    let y = height * buttonY;
+    let y = height * 0.6;
     let gap = min (width, height) * 0.15;
     let s = min(width, height) * 0.04;
 
@@ -96,9 +96,9 @@ function drawButtons() {
 //(Measures the distance from the house to each button's center)
 
 function mousePressed() {
-    let y = height * 0.9;
-    let gap = min(width, height) * 0.15;
-    let hitSize = min(width, height) * 0.06;
+    let y = height * 0.6;
+    let gap = min(width, height) * 0.9;
+    let hitSize = min(width, height) * 0.02;
     
     if (dist(mouseX, mouseY, width / 2, y) < hitSize) {
         playSong();
