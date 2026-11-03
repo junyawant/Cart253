@@ -16,7 +16,7 @@ let songs = [];
 let currentSong = 0;
 let isPlaying = false;
 
-let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices - Baptiste Robert (Baptiste R.)", "Syd Matters - Obstacles - Syd matters", "Syd Matters - To All of You - Syd matters" ] 
+let titles = ["Conan Gray - Astronomy", "Sufjan Stevens Remaster - Futile Devices - Baptiste Robert (Baptiste R.)", "Syd Matters - Obstacles", "Syd Matters - To All of You" ] 
 let files = ["astronomy", "futileDevices", "obstacles", "toallofyou"];
 
 function preload() {
