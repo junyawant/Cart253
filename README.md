@@ -108,6 +108,7 @@ This section is dedicated to my prototypes and projects for CART 253 that will b
 - [Conditionals Challenge](codingchallenges/conditionals-challenge/README.md)
 - [Events Challenge](codingchallenges/events-challenge/README.md)
 - [Functions Challenge](codingchallenges/functions-challenge/README.md)
+- [Loops Challenge](codingchallenges/loops-challenge/README.md)
 
 
 
