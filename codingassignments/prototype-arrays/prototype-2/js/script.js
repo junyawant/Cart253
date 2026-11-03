@@ -83,7 +83,7 @@ function mousePressed() {
     let y = height * 0.9;
     let gap = min(width, height) * 0.15;
     let hitSize = min(Width, height) * 0.06;
-
+    
 
 }
 
@@ -94,6 +94,16 @@ function playSong() {
     } else {
         songs[currentSong].play();
         isPlaying = true;
+    }
+
+function nextSong() {
+    songs[currentSong].stop();
+    currentSong++;
+    if (currentSong >= songs.length) {
+        currentSong = 0;
+    }
+    if (isPlaying) {
+        songs[currentSong].play();
     }
 
 function windowResized() {
