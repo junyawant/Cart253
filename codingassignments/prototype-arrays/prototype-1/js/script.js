@@ -1,6 +1,6 @@
 /**
- * Title of Project
- * Author Name
+ * Motivate Thyself
+ * Erica Galvez
  * 
  * motivational quotes
  */
