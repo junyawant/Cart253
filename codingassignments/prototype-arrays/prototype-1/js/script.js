@@ -2,7 +2,7 @@
  * Hat of the Day
  * Erica Galvez
  * 
- * Cycling through a set of hats to decide which one to wear for the day!
+ * My idea for this prototype: Cycling through a set of hats to decide which one to wear for the day!
  */
 
 "use strict";

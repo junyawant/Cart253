@@ -1,22 +1,23 @@
-# TITLE OF PROJECT
+---
+---
 
-AUTHOR NAME
+# Hat of the Day
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+## Erica Galvez
+
+- [View this project online](https://junyawant.github.io/Cart253//codingassignments/prototype-arrays/prototype-1/)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-arrays/prototype-1/js/script.js)
+
+[hatoftheday](./assets/images/hatoftheday.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This prototype was more of a personal one. For anyone that does cross paths with me, atleast pretty often, know that I love to wear hats! I have a good collection stacked at home and usually rotate between them depending on my outfit. As I was getting ready to go to work today I figured that using my hat collection in an array would be a great idea!
+
+## How it Works
+- Use the Left & Right Arrow Keys to browse through which hat to wear today!
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - This project uses texts posted to [this](https://www.reddit.com/r/GetMotivated/comments/1iu74n3/whats_the_most_motivating_thing_someone_has_ever/) reddit thread.
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+> - This project uses hat images from Amazon that can be found [here](https://www.amazon.ca/ref=nav_logo)
