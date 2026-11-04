@@ -66,14 +66,23 @@ function draw() {
     let tw = BOX_W - padX * 2 - 15;
     let th = BOX_H - padY * 2 - 15;
 
+    //Draws the text/quotes from the array
     fill(20);
     noStroke();
     let size = fitTextSize(quotes[index], tw, th);
     textSize(size);
     textLeading(size * 1.15); //sets the spacing between lines of text
     text(quotes[index], tx, ty, tw, th);
-    
+
+    //Text that displays the instructions on how to interact with the project (bottom right)
+    textSize(16);
+    fill(255, 220);
+    textAlign(RIGHT, BOTTOM);
+    text("Press E (" + (index + 1) + "/" + quotes.length + ")", width - 15, height - 12);
+    textAlign(CENTER, CENTER);
 }
+
+//This functions shrinks the font to fit in the textbox
 //s stands for = Size
 // str stands for = string
 function fitTextSize(str, w, h) {
