@@ -65,6 +65,13 @@ function draw() {
     let ty = BOX_Y + padY;
     let tw = BOX_W - padX * 2 - 15;
     let th = BOX_H - padY * 2 - 15;
+
+    fill(20);
+    noStroke();
+    let size = fitTextSize(quotes[index], tw, th);
+    textSize(size);
+    textLeading(size * 1.15); //sets the spacing between lines of text
+    text(quotes[index], tx, ty, tw, th);
     
 }
 //s stands for = Size
