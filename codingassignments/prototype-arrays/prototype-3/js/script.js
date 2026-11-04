@@ -24,33 +24,27 @@ let quotes = [
 let index= 0;
 
 //Variables for textbox
-
 const BOX_X= 40;
 const BOX_Y= 40;
 const BOX_W= 480;
 const BOX_H= 190;
 
-
 function preload() {
     spidermanImg = loadImage("assets/images/spiderman.png");
     box = loadImage("assets/images/textbox.png");
-
 }
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * Creates the canvas, aligns the style and sets the text style
 */
 function setup() {
-    // createCanvas(windowWidth, windowHeight)
     createCanvas(1080, 720);
     textAlign((CENTER), CENTER)
     textStyle(BOLD);
-
 }
 
-
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * Draws the background, the textbox, sets the variables for the textbox and writes the text (quotes + instructions)
 */
 function draw() {
     background("#000000");
@@ -107,12 +101,9 @@ function fitTextSize(str, w, h) {
     return 10;
 }
 
+//This makes it so that everytime I press E on my keyboard, it changes to a new line of text/quotes from the array/index 
 function keyPressed() {
     if (key === "e" || key === "E") {
         index = (index + 1) % quotes.length
     }
 }
-
-// function windowResized() {
-//     resizeCanvas(windowWidth, windowHeight)
-// }
