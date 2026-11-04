@@ -1,23 +1,26 @@
-# TITLE OF PROJECT
+---
+---
 
-AUTHOR NAME
+# Spiderman: Words of Inspiration
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+## Erica Galvez
+
+- [View this project online](/codingassignments/prototype-arrays/prototype-3/)
+- [View the code for this project here](https://github.com/junyawant/Cart253/blob/main/codingassignments/prototype-arrays/prototype-3/js/script.js)
+
+![spiderwordsofinspiration](./assets/images/spidermanwordsofinspiration.png)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+Following the justice done in the neighborhood, Spiderman has said many different inspirational quotes in many of the movies of the franchise. My goal for this prototype was to use arrays with text in a way that would look visually cool as well. 
+The project aims to inspire those who are big fans of the Spiderman series! Speak with spiderman as he swings around the city!
+
+## How it Works
+
+- Press E on your keyboard and read through the several different inspiring quotes from a variety of the Spiderman movies!
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 > - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+> - This project uses quotes from [here](https://collider.com/spider-man-quotes-ranked/)
+> - This project uses a textbox image from [here](https://www.youtube.com/watch?v=xAl_-NIwBuI)
