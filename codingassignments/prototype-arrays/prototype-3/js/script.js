@@ -23,6 +23,13 @@ let quotes = [
 
 let index= 0;
 
+//Variables for textbox
+
+const BOX_X= 40;
+const BOX_Y= 40;
+const BOX_W= 480;
+const BOX_H= 190;
+
 
 function preload() {
     spidermanImg = loadImage("assets/images/spiderman.png");
@@ -34,7 +41,8 @@ function preload() {
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-    createCanvas(windowWidth, windowHeight)
+    // createCanvas(windowWidth, windowHeight)
+    createCanvas(1080, 720);
 
 }
 
@@ -45,10 +53,10 @@ function setup() {
 function draw() {
     background("#000000");
 
-    image(spidermanImg, 0,0 );
+    image(spidermanImg, 0,0, width, height);
 
 }
 
-function windowResized() {
-    resizeCanvas(windowWidth, windowHeight)
-}
+// function windowResized() {
+//     resizeCanvas(windowWidth, windowHeight)
+// }
