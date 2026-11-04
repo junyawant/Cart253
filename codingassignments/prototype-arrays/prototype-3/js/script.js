@@ -44,6 +44,7 @@ function setup() {
     // createCanvas(windowWidth, windowHeight)
     createCanvas(1080, 720);
     textAlign((CENTER), CENTER)
+    textStyle(BOLD);
 
 }
 
