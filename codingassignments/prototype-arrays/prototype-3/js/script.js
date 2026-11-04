@@ -97,6 +97,12 @@ function fitTextSize(str, w, h) {
     return 10;
 }
 
+function keyPressed() {
+    if (key === "e" || key === "E") {
+        index = (index + 1) % quotes.length
+    }
+}
+
 // function windowResized() {
 //     resizeCanvas(windowWidth, windowHeight)
 // }
