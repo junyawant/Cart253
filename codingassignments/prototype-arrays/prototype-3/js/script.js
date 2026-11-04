@@ -43,6 +43,7 @@ function preload() {
 function setup() {
     // createCanvas(windowWidth, windowHeight)
     createCanvas(1080, 720);
+    textAlign((CENTER), CENTER)
 
 }
 
@@ -65,6 +66,28 @@ function draw() {
     let tw = BOX_W - padX * 2 - 15;
     let th = BOX_H - padY * 2 - 15;
     
+}
+//s stands for = Size
+// str stands for = string
+function fitTextSize(str, w, h) {
+    for (let s = 34; s > 10; s--) {
+        textSize(s);
+        let lineH = s * 1.15;
+        let words = str.split("");
+        let lines = 1;
+        let line = ""
+        for (let word of words) {
+            let test = line === "" ? word: line + " " + word;
+            if (textWidth(test) > w) {
+                lines++;
+                line = word;
+            }else {
+                line = test;
+            }
+        }
+        if (lines * lineH <= h) return s;
+    }
+    return 10;
 }
 
 // function windowResized() {
