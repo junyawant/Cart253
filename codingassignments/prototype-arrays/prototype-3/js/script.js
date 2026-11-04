@@ -52,9 +52,19 @@ function setup() {
 */
 function draw() {
     background("#000000");
-
+    //Draws background spiderman image
     image(spidermanImg, 0,0, width, height);
+    //Draws textbox image
+    image(box, BOX_X, BOX_Y, BOX_W, BOX_H, 80, 90, 510, 175);
 
+    //Text area inside the box (so the text doesnt touch the border)
+    let padX = 35;
+    let padY = 28;
+    let tx = BOX_X + padX;
+    let ty = BOX_Y + padY;
+    let tw = BOX_W - padX * 2 - 15;
+    let th = BOX_H - padY * 2 - 15;
+    
 }
 
 // function windowResized() {
