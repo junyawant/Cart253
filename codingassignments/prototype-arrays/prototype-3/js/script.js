@@ -26,6 +26,7 @@ let index= 0;
 
 function preload() {
     spidermanImg = loadImage("assets/images/spiderman.png");
+    box = loadImage("assets/images/textbox.png");
 
 }
 
