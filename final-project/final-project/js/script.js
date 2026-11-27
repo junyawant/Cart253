@@ -41,7 +41,7 @@ function draw() {
     if (!room) return; //skip drawing until the model has finished loading
 
     orbitControl(); //allows me to drag, scroll, and pan around the 3D space
-    ambientLight(110);
+    ambientLight(90);
     directionalLight(130, 130, 130, 0.3, 0.8, -0.5);
 
     scale(100);
