@@ -11,7 +11,12 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+
+//Setting up my variables
+let objects = [] //this loads my models (individual ones)
+
 function setup() {
+    createCanvas(windowWidth, windowHeight, WEBGL);
 
 }
 
@@ -21,4 +26,8 @@ function setup() {
 */
 function draw() {
 
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
