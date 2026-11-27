@@ -37,12 +37,12 @@ async function setup() {
  * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
 */
 function draw() {
-    background(30);
+    background(255, 0, 255);
     if (!room) return; //skip drawing until the model has finished loading
 
     orbitControl(); //allows me to drag, scroll, and pan around the 3D space
-    ambientLight(110);
-    directionalLight(130, 130, 130, 0.3, 0.8, -0.5);
+    ambientLight(255);
+    // directionalLight(130, 130, 130, 0.3, 0.8, -0.5);
 
     scale(100);
     rotateX(PI); //blender's orientation of up is p5's orientation of down, this makes it so that my room is now loaded in the wrong way (normal view of a room and not an upside down one)
